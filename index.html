@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GRIMZ — Drop 01 · Sanzaru Track Set</title>
+<meta name="description" content="GRIMZ Drop 01: the Sanzaru Track Set. Pink technical tracksuit with reflective panels and ankh hardware. Limited run, shipped worldwide.">
+<meta name="theme-color" content="#000000">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GRIMZ — Drop 01">
+<meta property="og:description" content="The Sanzaru Track Set. Work hard. Cry less.">
+<meta property="og:image" content="assets/media/og-grimz.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="GRIMZ">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GRIMZ — Drop 01">
+<meta name="twitter:description" content="The Sanzaru Track Set. Work hard. Cry less.">
+<meta name="twitter:image" content="assets/media/og-grimz.jpg">
+<!-- SEO: once the domain is known, make og:image absolute and add:
+<link rel="canonical" href="https://[DOMINIO]/">
+<link rel="alternate" hreflang="en" href="https://[DOMINIO]/?lang=en">
+<link rel="alternate" hreflang="it" href="https://[DOMINIO]/?lang=it">
+<link rel="alternate" hreflang="x-default" href="https://[DOMINIO]/"> -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23E8809C'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial Black,Arial' font-weight='900' font-style='italic' font-size='40' fill='%230B0B0C'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&amp;family=Geist:wght@300..700&amp;family=Instrument+Serif:ital@0;1&amp;family=Geist+Mono:wght@400..600&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&amp;family=Geist:wght@300..700&amp;family=Instrument+Serif:ital@0;1&amp;family=Geist+Mono:wght@400..600&amp;display=swap"></noscript>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="preload" as="image" href="assets/media/poster-hero.webp" fetchpriority="high">
+<!-- structured data: product + offers (reviews get added here once they are real and verified) -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "#org", "name": "GRIMZ", "url": "/", "logo": "assets/media/og-grimz.jpg", "sameAs": []}, {"@type": "ProductGroup", "name": "GRIMZ Sanzaru Track Set", "brand": {"@type": "Brand", "name": "GRIMZ"}, "productGroupID": "SANZARU", "variesBy": ["https://schema.org/size"], "description": "Pink technical tracksuit with reflective lightning panels, ankh zip hardware and the three monkeys on the back. Drop 01, limited run.", "image": ["assets/media/set-front.webp", "assets/media/set-side.webp", "assets/media/set-back.webp"], "hasVariant": [{"@type": "Product", "name": "GRIMZ Sanzaru Track Set", "sku": "GZ-SET", "image": "assets/media/set-front.webp", "offers": {"@type": "Offer", "price": "109.99", "priceCurrency": "EUR", "availability": "https://schema.org/InStock"}}, {"@type": "Product", "name": "GRIMZ Sanzaru Jacket", "sku": "GZ-JKT", "image": "assets/media/jacket-front.webp", "offers": {"@type": "Offer", "price": "69.99", "priceCurrency": "EUR", "availability": "https://schema.org/InStock"}}, {"@type": "Product", "name": "GRIMZ Sanzaru Pants", "sku": "GZ-PNT", "image": "assets/media/pants-front.webp", "offers": {"@type": "Offer", "price": "59.99", "priceCurrency": "EUR", "availability": "https://schema.org/InStock"}}]}]}</script>
+<script>
+  /* language + intro flags before first paint */
+  (function () {
+    try {
+      var q = new URLSearchParams(location.search).get('lang');   // ?lang=it / ?lang=en (shareable links, hreflang)
+      var l = q === 'it' || q === 'en' ? q : JSON.parse(localStorage.getItem('grimz:lang') || 'null');
+      if (!l) l = (navigator.language || 'en').toLowerCase().indexOf('it') === 0 ? 'it' : 'en';
+      document.documentElement.setAttribute('data-lang', l);
+      document.documentElement.lang = l;
+      if(sessionStorage.getItem('grimz:veil')){sessionStorage.removeItem('grimz:veil');document.documentElement.classList.add('veil-in');}
+      if (sessionStorage.getItem('grimz:intro')) document.documentElement.classList.add('intro-seen');
+      if (navigator.deviceMemory && navigator.deviceMemory < 4) document.documentElement.classList.add('lite');
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+
+<!-- ================= INTRO — the drop ritual (once per visit) ================= -->
+<div class="intro" data-intro-screen aria-hidden="true">
+  <div class="intro-in">
+    <p class="intro-drop disp">Drop 01</p>
+    <div class="intro-bar"><span data-intro-bar></span></div>
+    <p class="mono intro-count"><span data-intro-count>000</span></p>
+  </div>
+</div>
+
+<div class="g" id="app">
+
+<!-- ================= TICKER ================= -->
+<div class="ticker" aria-hidden="true">
+  <div class="marq" data-marq>
+    <div class="marq-set">
+      <span><span class="en">Drop 01 — Live now</span><span class="it">Drop 01 — Ora online</span></span>
+      <svg class="ic" viewBox="0 0 24 24"><path d="M12 2.6c-2 0-3.3 1.7-3.3 3.7 0 2 1.5 3.7 3.3 5.1 1.8-1.4 3.3-3.1 3.3-5.1 0-2-1.3-3.7-3.3-3.7z M6.8 11.4h10.4 M12 11.4v10"/></svg>
+      <span>Work hard cry less</span>
+      <svg class="ic" viewBox="0 0 24 24"><path d="M12 2.6c-2 0-3.3 1.7-3.3 3.7 0 2 1.5 3.7 3.3 5.1 1.8-1.4 3.3-3.1 3.3-5.1 0-2-1.3-3.7-3.3-3.7z M6.8 11.4h10.4 M12 11.4v10"/></svg>
+      <span><span class="en">Shipped worldwide</span><span class="it">Spedizione in tutto il mondo</span></span>
+      <svg class="ic" viewBox="0 0 24 24"><path d="M12 2.6c-2 0-3.3 1.7-3.3 3.7 0 2 1.5 3.7 3.3 5.1 1.8-1.4 3.3-3.1 3.3-5.1 0-2-1.3-3.7-3.3-3.7z M6.8 11.4h10.4 M12 11.4v10"/></svg>
+      <span>Sanzaru Track Set</span>
+      <svg class="ic" viewBox="0 0 24 24"><path d="M12 2.6c-2 0-3.3 1.7-3.3 3.7 0 2 1.5 3.7 3.3 5.1 1.8-1.4 3.3-3.1 3.3-5.1 0-2-1.3-3.7-3.3-3.7z M6.8 11.4h10.4 M12 11.4v10"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- ================= NAV — floating glass capsule ================= -->
+<header class="nav" data-nav>
+  <div class="nav-cap">
+    <a class="logo" href="#top" aria-label="GRIMZ — home">GRIMZ</a>
+    <nav class="nav-links" aria-label="Main" data-nav-links>
+      <span class="nav-pill" data-nav-pill aria-hidden="true"></span>
+      <a href="#fit" data-nav-for="fit">360°</a>
+      <a href="#details" data-nav-for="details pants"><span class="en">Details</span><span class="it">Dettagli</span></a>
+      <a href="#worn" data-nav-for="worn">Worn by</a>
+      <a href="#shop" data-nav-for="shop">Shop</a>
+      <a href="storia.html"><span class="en">Story</span><span class="it">Storia</span></a>
+    </nav>
+    <div class="nav-r">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang-btn="it" aria-pressed="false">IT</button>
+      </div>
+      <button type="button" class="sfx-btn" data-sfx-toggle aria-pressed="false" aria-label="Interface sounds"><svg class="ic s-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4v-5Z M16 9.5l5 5 M21 9.5l-5 5"/></svg><svg class="ic s-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4v-5Z M15.5 9a4 4 0 0 1 0 6 M18 6.5a7.5 7.5 0 0 1 0 11"/></svg></button>
+      <button type="button" class="cart-btn" data-action="open-cart" data-cart-target data-i18n-attr="aria-label" data-en="Open bag" data-it="Apri la borsa" aria-label="Open bag">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+        <span class="badge" data-cart-count hidden>0</span>
+      </button>
+      <button type="button" class="menu-btn" data-action="menu" aria-expanded="false" aria-controls="msheet" data-i18n-attr="aria-label" data-en="Menu" data-it="Menu" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile menu: full-screen glass sheet -->
+<div class="msheet" id="msheet" data-msheet aria-hidden="true">
+  <nav class="msheet-links" aria-label="Menu">
+    <a href="#fit" style="--i:0">360°</a>
+    <a href="#details" style="--i:1"><span class="en">Details</span><span class="it">Dettagli</span></a>
+    <a href="#worn" style="--i:2">Worn by</a>
+    <a href="#shop" style="--i:3">Shop</a>
+    <a href="storia.html" style="--i:4"><span class="en">Story</span><span class="it">Storia</span></a>
+  </nav>
+  <div class="msheet-foot">
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang-btn="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang-btn="it" aria-pressed="false">IT</button>
+    </div>
+    <button type="button" class="sfx-row" data-sfx-toggle aria-pressed="false"><svg class="ic s-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4v-5Z M16 9.5l5 5 M21 9.5l-5 5"/></svg><svg class="ic s-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4v-5Z M15.5 9a4 4 0 0 1 0 6 M18 6.5a7.5 7.5 0 0 1 0 11"/></svg><span data-sfx-label>Sounds off</span></button>
+    <a class="btn btn-pink" href="#shop"><span class="en">Shop the drop</span><span class="it">Acquista il drop</span></a>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<section id="top" class="hero" data-hero>
+  <div class="hero-word" aria-hidden="true">GRIMZ</div>
+  <div class="hero-vwrap">
+    <video data-hero-video poster="assets/media/poster-hero.webp" muted loop playsinline preload="auto" aria-hidden="true">
+      <source src="assets/media/hero-drop.mp4" type="video/mp4" media="(min-width: 701px)">
+      <source src="assets/media/hero-drop-m.mp4" type="video/mp4">
+    </video>
+    <!-- notification on the phone screen, synced to the video (3.93s → 4.56s) -->
+    <div class="ov ov-phone" data-ov-phone aria-hidden="true" style="left:19.6%;top:42.8%;width:27.8%;height:39.6%">
+      <div class="ph-island"></div>
+      <p class="ph-clock">21:00</p>
+      <div class="ph-card">
+        <div class="app">G</div>
+        <div class="ph-txt">
+          <p class="ph-meta"><span>GRIMZ</span><span><span class="en">now</span><span class="it">ora</span></span></p>
+          <p class="ph-h"><span class="en">Drop 01 is live</span><span class="it">Il Drop 01 è online</span></p>
+          <p class="ph-b"><span class="en">Sanzaru Track Set. Tap before it’s gone.</span><span class="it">Sanzaru Track Set. Tocca prima che finisca.</span></p>
+        </div>
+      </div>
+    </div>
+    <!-- banners on the split screen, synced to the video (5.45s → 6.56s) -->
+    <div class="ov ov-ban ov-l" data-ov-l aria-hidden="true" style="left:0;top:26.4%;width:30%;height:8.8%">
+      <div class="ban-txt">
+        <p class="ban-t"><span class="en">Drop 01 is live</span><span class="it">Il Drop 01 è online</span></p>
+        <p class="ban-b"><span class="en">Sanzaru Track Set · now</span><span class="it">Sanzaru Track Set · ora</span></p>
+      </div>
+    </div>
+    <div class="ov ov-ban" data-ov-r aria-hidden="true" style="left:54.2%;top:26.8%;width:45.8%;height:9%">
+      <div class="app">G</div>
+      <div class="ban-txt">
+        <p class="ban-t">GRIMZ · <span class="en">now</span><span class="it">ora</span></p>
+        <p class="ban-b"><span class="en">Drop 01 is live. Tap before it’s gone.</span><span class="it">Il Drop 01 è online. Tocca prima che finisca.</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-copy">
+    <div class="hero-l">
+      <p class="mono eye">GRIMZ — Drop 01</p>
+      <h1 class="sr">GRIMZ Drop 01 — Sanzaru Track Set</h1>
+      <p class="kin disp" aria-hidden="true">
+        <span class="ka"><span class="en">One<br>notification.</span><span class="it">Una<br>notifica.</span></span>
+        <span class="kb"><span class="en">Drop 01<br>is live.</span><span class="it">Il drop 01<br>è online.</span></span>
+        <span class="kc"><span class="en">Everyone’s<br>running.</span><span class="it">Corrono<br>tutti.</span></span>
+      </p>
+      <p class="lead"><span class="en">Sanzaru Track Set — pink technical tracksuit, reflective panels, ankh hardware. Limited run.</span><span class="it">Sanzaru Track Set — tuta tecnica rosa, pannelli riflettenti, dettagli ankh. Tiratura limitata.</span></p>
+    </div>
+    <div class="hero-r">
+      <p class="mono eye">Sanzaru Track Set</p>
+      <p class="hero-price buy-price" data-price="set">€109.99</p>
+        <p class="drop-note drop-note-hero" data-drop-note hidden></p>
+      <a class="btn btn-pink" href="#shop"><span class="en">Shop the drop</span><span class="it">Acquista il drop</span><svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <button type="button" class="sound" data-action="sound" aria-pressed="false">
+        <svg class="ic ic-off" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4z M16 9.5l5 5M21 9.5l-5 5"/></svg>
+        <svg class="ic ic-on" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4z M15.5 9a4 4 0 0 1 0 6 M18 6.5a7.5 7.5 0 0 1 0 11"/></svg>
+        <span class="lbl-on"><span class="en">Sound on</span><span class="it">Attiva audio</span></span>
+        <span class="lbl-off"><span class="en">Sound off</span><span class="it">Disattiva audio</span></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 360° — scroll + drag ================= -->
+<section id="fit" class="dsec sec-360" data-sec="360" data-dur="4.07">
+  <div class="dstick">
+    <div class="dgrid">
+      <div class="dleft">
+        <p class="mono eye"><span class="en">360° — Fit</span><span class="it">360° — Vestibilità</span></p>
+        <h2 class="disp h-l dttl"><span class="en">Turn it.</span><span class="it">Giralo.</span></h2>
+        <p class="lead"><span class="en">Scroll, or grab the model and drag. Cropped jacket, wide-leg pant: an oversized silhouette from every angle.</span><span class="it">Scorri, oppure afferra il manichino e trascinalo. Giacca corta, pantalone a gamba larga: una silhouette oversize da ogni angolo.</span></p>
+        <a class="btn btn-pink rot-buy" href="#shop"><span class="en">Buy the set</span><span class="it">Acquista il completo</span> — <span data-price="set">€109.99</span></a>
+      </div>
+      <div class="dframe sq rot-frame" data-rot data-cursor="drag">
+        <div class="dclip"><video poster="assets/media/poster-360.webp" muted playsinline preload="metadata" aria-hidden="true">
+          <source src="assets/media/rotate360.mp4" type="video/mp4" media="(min-width: 701px)">
+          <source src="assets/media/rotate360-m.mp4" type="video/mp4">
+        </video></div>
+        <svg class="orbit" viewBox="0 0 200 40" aria-hidden="true"><ellipse cx="100" cy="20" rx="88" ry="14"/><circle data-dot cx="100" cy="34" r="3.2"/></svg>
+        <p class="drag-hint mono" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M4 12h16"/></svg><span class="en">Drag to rotate</span><span class="it">Trascina per ruotare</span></p>
+      </div>
+      <div class="rcol">
+        <p class="deg" data-deg aria-hidden="true">0°</p>
+        <div class="rcaps">
+          <div class="rcap" data-rz="0,0.3">
+            <p class="mono eye"><span class="en">Front</span><span class="it">Fronte</span></p>
+            <h3 class="disp"><span class="en">Signed on the chest.</span><span class="it">Firmata sul petto.</span></h3>
+            <p class="mute"><span class="en">GRIMZ on chest and thigh, ankh zip pockets, centre zip up to the chin.</span><span class="it">GRIMZ su petto e coscia, tasche zip ankh, zip centrale fino al mento.</span></p>
+          </div>
+          <div class="rcap" data-rz="0.3,0.7">
+            <p class="mono eye"><span class="en">Side</span><span class="it">Lato</span></p>
+            <h3 class="disp"><span class="en">Lightning lines.</span><span class="it">Linee a saetta.</span></h3>
+            <p class="mute"><span class="en">Reflective panels run from shoulder to ankle. Ankle zips open the leg over your sneakers.</span><span class="it">Pannelli riflettenti dalla spalla alla caviglia. Le zip alla caviglia aprono la gamba sulle sneakers.</span></p>
+          </div>
+          <div class="rcap" data-rz="0.7,1">
+            <p class="mono eye"><span class="en">Back</span><span class="it">Retro</span></p>
+            <h3 class="disp"><span class="en">The manifesto.</span><span class="it">Il manifesto.</span></h3>
+            <p class="mute"><span class="en">The three wise monkeys in gold grillz. WORK HARD CRY LESS on the hood.</span><span class="it">Le tre scimmie sagge con i grillz d’oro. WORK HARD CRY LESS sul cappuccio.</span></p>
+          </div>
+        </div>
+        <div class="angles" role="group" data-i18n-attr="aria-label" data-en="Rotate to an angle" data-it="Ruota su un angolo" aria-label="Rotate to an angle">
+          <button type="button" data-angle="0"><span class="en">Front</span><span class="it">Fronte</span></button>
+          <button type="button" data-angle="0.5"><span class="en">Side</span><span class="it">Lato</span></button>
+          <button type="button" data-angle="1"><span class="en">Back</span><span class="it">Retro</span></button>
+        </div>
+        <ul class="facts">
+          <li><span><span class="en">Fit</span><span class="it">Vestibilità</span></span><span><span class="en">Oversized</span><span class="it">Oversize</span></span></li>
+          <li><span><span class="en">Jacket</span><span class="it">Giacca</span></span><span><span class="en">Cropped, elastic hem</span><span class="it">Corta, orlo elastico</span></span></li>
+          <li><span><span class="en">Pant</span><span class="it">Pantalone</span></span><span><span class="en">Wide leg, zip ankle</span><span class="it">Gamba larga, zip alla caviglia</span></span></li>
+          <li><span><span class="en">Model</span><span class="it">Modello</span></span><span><span class="en">[HEIGHT] cm · size [SIZE]</span><span class="it">[ALTEZZA] cm · taglia [TAGLIA]</span></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="dprog"><span class="fill" data-prog></span></div>
+  </div>
+</section>
+
+<!-- ================= UNDER THE LENS — 01 JACKET =================
+     data-hs   = "start,end" seconds of the video where the detail is framed
+     data-path = "time,x%,y%;…" where the detail sits in the frame (tracked frame by frame) -->
+<section id="details" class="dsec sec-detail has-shop" data-sec="jacket" data-dur="8.04" aria-label="Jacket details">
+  <div class="dstick">
+    <div class="lgrid">
+      <div class="dframe lframe" data-cursor="scroll">
+        <div class="dclip"><video poster="assets/media/poster-jacket.webp" muted playsinline preload="metadata" aria-hidden="true">
+          <source src="assets/media/detail-jacket.mp4" type="video/mp4" media="(min-width: 701px)">
+          <source src="assets/media/detail-jacket-m.mp4" type="video/mp4">
+        </video><img class="ps-still" data-ps-still src="assets/media/jacket-front.webp" alt="" aria-hidden="true" decoding="async"></div>
+        <div class="loupe" data-hs="1,2.7" data-path="1,32.8,49.3;1.125,33,49;1.25,33.3,48.8;1.375,34.2,48.2;1.5,35.4,48;1.625,37.6,47.4;1.75,40,47;1.875,43.4,46.6;2,47.5,46.2;2.125,52.3,45.6;2.25,58.3,45.4;2.375,64,45.4;2.5,72,45.4;2.583,76.8,45.2" style="left:32.8%;top:49.3%"><canvas></canvas><span class="loupe-glass"></span></div>
+        <span class="dline" data-hs="1,2.7"><span></span></span>
+        <div class="loupe" data-hs="3.12,3.58" data-path="3.125,10.7,73.8;3.167,14.5,73.8;3.208,21.8,73.8;3.25,26.2,73.8;3.292,32.1,73.8;3.333,38,73.8;3.375,41.7,73.8;3.417,48.1,73.8;3.458,53.7,73.8;3.5,58.9,73.8;3.542,62.1,73.7" style="left:10.7%;top:73.8%"><canvas></canvas><span class="loupe-glass"></span></div>
+        <span class="dline" data-hs="3.12,3.58"><span></span></span>
+        <div class="loupe" data-hs="3.58,5" data-path="3.583,86.4,46.7;3.708,84,47.3;3.833,81.3,47.9;3.958,78.7,48.4;4.083,75.6,49;4.208,71.7,49.8;4.333,68.4,50.6;4.458,64,51.4;4.583,59.7,52;4.708,55.4,52.7;4.833,51,53.3;4.958,47.4,53.9;5,45.8,54.1" style="left:86.4%;top:46.7%"><canvas></canvas><span class="loupe-glass"></span></div>
+        <span class="dline" data-hs="3.58,5"><span></span></span>
+        <div class="loupe" data-hs="5.8,6.35" data-path="5.792,34.2,8.5;5.833,33.5,8.5;5.875,32.2,8.5;5.917,31.5,8.5;5.958,30,9.4;6,29.6,10.2;6.042,28.8,11.2;6.083,28,12;6.125,27.5,12.5;6.167,26.8,13.4;6.208,26.3,13.9;6.25,25.6,14.9;6.292,25.4,15.4;6.333,25,16.3" style="left:34.2%;top:8.5%"><canvas></canvas><span class="loupe-glass"></span></div>
+        <span class="dline" data-hs="5.8,6.35"><span></span></span>
+        <div class="loupe" data-hs="6.7,8.2" data-path="6.708,66.9,53;6.792,64.3,53.1;6.875,61.4,53.3;6.958,58.4,53.6;7.042,55.9,53.8;7.125,53.6,53.9;7.208,50.8,53.9;7.292,48.9,53.9;7.375,47,53.9;7.458,45.6,53.9;7.542,44.2,53.8;7.625,43.1,53.8;7.708,42.3,53.8;7.792,41.6,53.8;7.875,41.1,53.8;7.958,40.7,53.8" style="left:66.9%;top:53%"><canvas></canvas><span class="loupe-glass"></span></div>
+        <span class="dline" data-hs="6.7,8.2"><span></span></span>
+        <p class="dintro mono" data-intro><svg class="ic" viewBox="0 0 24 24"><path d="M12 3.5a5 5 0 0 1 5 5v7a5 5 0 0 1-10 0v-7a5 5 0 0 1 5-5Z M12 7v3"/></svg><span class="en">Scroll to inspect</span><span class="it">Scorri per ispezionare</span></p>
+      </div>
+      <div class="dcol">
+        <div class="dcard" data-hs="1,2.7" data-side="l" style="top:47%"><div class="dc-in">
+          <p class="dc-idx mono"><span class="dc-n">01</span><span class="dc-ticks" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span><span class="en">Jacket</span><span class="it">Giacca</span></span></p>
+          <h3 class="dc-t"><span class="en">The signature.</span><span class="it">La firma.</span></h3>
+          <p class="dc-p"><span class="en">The signature, tagged on the chest like a name on a wall. Silver-white on pink: you see it, it never shouts.</span><span class="it">La firma, taggata sul petto come un nome su un muro. Bianco argento su rosa: si vede, senza urlare.</span></p>
+          <dl class="dc-spec"><div><dt><span class="en">Detail</span><span class="it">Dettaglio</span></dt><dd><span class="en">GRIMZ tag</span><span class="it">Tag GRIMZ</span></dd></div><div><dt><span class="en">Position</span><span class="it">Posizione</span></dt><dd><span class="en">Chest</span><span class="it">Petto</span></dd></div></dl>
+        </div></div>
+        <div class="dcard" data-hs="3.12,3.58" data-side="l" style="top:62%"><div class="dc-in">
+          <p class="dc-idx mono"><span class="dc-n">02</span><span class="dc-ticks" aria-hidden="true"><i></i><i class="on"></i><i></i><i></i><i></i></span><span><span class="en">Jacket</span><span class="it">Giacca</span></span></p>
+          <h3 class="dc-t"><span class="en">Built for the night.</span><span class="it">Fatta per la notte.</span></h3>
+          <p class="dc-p"><span class="en">Grey reflective inserts follow the lines of the body and catch the light at night. White piping traces every cut.</span><span class="it">Inserti grigi riflettenti seguono le linee del corpo e catturano la luce di notte. Un profilo bianco disegna ogni taglio.</span></p>
+          <dl class="dc-spec"><div><dt><span class="en">Detail</span><span class="it">Dettaglio</span></dt><dd><span class="en">Reflective panels</span><span class="it">Pannelli riflettenti</span></dd></div><div><dt><span class="en">Position</span><span class="it">Posizione</span></dt><dd><span class="en">Sleeves &amp; sides</span><span class="it">Maniche e fianchi</span></dd></div></dl>
+        </div></div>
+        <div class="dcard" data-hs="3.58,5" data-side="r" style="top:51%"><div class="dc-in">
+          <p class="dc-idx mono"><span class="dc-n">03</span><span class="dc-ticks" aria-hidden="true"><i></i><i></i><i class="on"></i><i></i><i></i></span><span><span class="en">Jacket</span><span class="it">Giacca</span></span></p>
+          <h3 class="dc-t"><span class="en">Hardware with a meaning.</span><span class="it">Un dettaglio che ha un senso.</span></h3>
+          <p class="dc-p"><span class="en">Zip pockets closed by an ankh-shaped puller: the ancient symbol of life, turned into hardware.</span><span class="it">Tasche con zip chiuse da un tiretto a forma di ankh: l’antico simbolo della vita, trasformato in dettaglio tecnico.</span></p>
+          <dl class="dc-spec"><div><dt><span class="en">Detail</span><span class="it">Dettaglio</span></dt><dd><span class="en">Ankh zip pullers</span><span class="it">Tiretti zip ankh</span></dd></div><div><dt><span class="en">Position</span><span class="it">Posizione</span></dt><dd><span class="en">Chest &amp; pockets</span><span class="it">Petto e tasche</span></dd></div></dl>
+        </div></div>
+        <div class="dcard" data-hs="5.8,6.35" data-side="l" style="top:30%"><div class="dc-in">
+          <p class="dc-idx mono"><span class="dc-n">04</span><span class="dc-ticks" aria-hidden="true"><i></i><i></i><i></i><i class="on"></i><i></i></span><span><span class="en">Jacket</span><span class="it">Giacca</span></span></p>
+          <h3 class="dc-t"><span class="en">Disappear on demand.</span><span class="it">Sparisci quando vuoi.</span></h3>
+          <p class="dc-p"><span class="en">Oversized hood with bungee cords and toggles. Pull it tight, zip up to the chin, disappear.</span><span class="it">Cappuccio ampio con coulisse e stopper. Stringi, chiudi la zip fino al mento, sparisci.</span></p>
+          <dl class="dc-spec"><div><dt><span class="en">Detail</span><span class="it">Dettaglio</span></dt><dd><span class="en">Storm hood</span><span class="it">Cappuccio</span></dd></div><div><dt><span class="en">Position</span><span class="it">Posizione</span></dt><dd><span class="en">Collar &amp; head</span><span class="it">Collo e testa</span></dd></div></dl>
+        </div></div>
+        <div class="dcard" data-hs="6.7,8.2" data-side="r" style="top:54%"><div class="dc-in">
+          <p class="dc-idx mono"><span class="dc-n">05</span><span class="dc-ticks" aria-hidden="true"><i></i><i></i><i></i><i></i><i class="on"></i></span><span><span class="en">Jacket</span><span class="it">Giacca</span></span></p>
+          <h3 class="dc-t"><span class="en">See no evil.</span><span class="it">Non vedo, non sento, non parlo.</span></h3>
+          <p class="dc-p"><span class="en">See no evil, hear no evil, speak no evil — in gold grillz. Above them, on the hood: WORK HARD CRY LESS.</span><span class="it">Non vedo, non sento, non parlo, con i grillz d’oro. Sopra di loro, sul cappuccio: WORK HARD CRY LESS.</span></p>
+          <dl class="dc-spec"><div><dt><span class="en">Detail</span><span class="it">Dettaglio</span></dt><dd><span class="en">Three monkeys</span><span class="it">Tre scimmie</span></dd></div><div><dt><span class="en">Position</span><span class="it">Posizione</span></dt><dd><span class="en">Back</span><span class="it">Schiena</span></dd></div></dl>
+        </div></div>
+      </div>
+    </div>
+    <!-- product shop: the video frame lands in .ps-slot and becomes the product image (main.js) -->
+    <div class="pshop" data-pshop="jacket" aria-hidden="true" inert>
+      <div class="ps-grid">
+        <div class="ps-slot" data-ps-slot>
+          <button type="button" class="flash-btn ps-flash" data-ps-flash aria-pressed="false"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3 5 13.5h6L10 21l8-10.5h-6L13 3Z"/></svg><span class="f-off"><span class="en">Try the flash</span><span class="it">Prova il flash</span></span><span class="f-on"><span class="en">Flash on</span><span class="it">Flash attivo</span></span></button>
+          <div class="ps-views" role="group" data-i18n-attr="aria-label" data-en="View" data-it="Vista" aria-label="View">
+            <button type="button" class="on" data-ps-view="0" aria-pressed="true"><span class="en">Front</span><span class="it">Fronte</span></button>
+            <button type="button" data-ps-view="1" aria-pressed="false"><span class="en">Side</span><span class="it">Lato</span></button>
+            <button type="button" data-ps-view="2" aria-pressed="false"><span class="en">Back</span><span class="it">Retro</span></button>
+          </div>
+        </div>
+        <div class="ps-photos"><figure class="ps-ph ps-prod"><img src="assets/media/jacket-front.webp" width="1024" height="1536" loading="lazy" decoding="async" data-i18n-attr="alt" data-en="GRIMZ Sanzaru jacket, front" data-it="Giacca GRIMZ Sanzaru, fronte" alt="GRIMZ Sanzaru jacket, front" data-lq="data:image/webp;base64,UklGRt4AAABXRUJQVlA4INIAAACwBQCdASoYACQAPuViqU0pJaQiMBqqqSAciWYACBAul5KIp0HznOFXykCmOV6hL937fj63nkAA/vVm2k1rZJ/N4E4hTyh4WwxX9QPJsx55z9jldaKG53us9zboMGDhHjRZ/+dZ+jqPwt7kpdfs7qdGAtbnAteByH3EYJoXXwiaznEZ5BoPvnpbHXaE2zPqcMBq8p66L1htskxUAH6nyn5aAORJdMBjJInqNLFOGM9a6jH9lxieE5e4vIShWVuAorSklAjCtk34jkZDkZI76tAgAAA="><button type="button" class="flash-btn ps-flash" data-ps-flash aria-pressed="false"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3 5 13.5h6L10 21l8-10.5h-6L13 3Z"/></svg><span class="f-off"><span class="en">Try the flash</span><span class="it">Prova il flash</span></span><span class="f-on"><span class="en">Flash on</span><span class="it">Flash attivo</span></span></button></figure><figure class="ps-ph ps-prod"><img src="assets/media/jacket-side.webp" width="1024" height="1536" loading="lazy" decoding="async" data-i18n-attr="alt" data-en="GRIMZ Sanzaru jacket, side" data-it="Giacca GRIMZ Sanzaru, lato" alt="GRIMZ Sanzaru jacket, side" data-lq="data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAACwBACdASoYACQAPuloqU4pJqOiMBqoASAdCUAaTgLNr6BqxYOq3DXQxC2j9D0AAP71Ztkzy5VKdXqOFgIqgv0yHaC06g7ytd0B2+A/NIZCmpYBM9yuER/F1o3xRWRrZz9tRzojRU9ZTrQrX4cnju4ZZgqu3sTnbmYk9AAA"></figure><figure class="ps-ph ps-prod"><picture><source srcset="assets/media/jacket-back.avif" type="image/avif"><img src="assets/media/jacket-back.webp" width="1024" height="1536" loading="lazy" decoding="async" data-i18n-attr="alt" data-en="GRIMZ Sanzaru jacket, back" data-it="Giacca GRIMZ Sanzaru, retro" alt="GRIMZ Sanzaru jacket, back" data-lq="data:image/webp;base64,UklGRugAAABXRUJQVlA4INwAAACQBQCdASoYACQAPulmrE+pJaQiJWzJIB0JYgDQGYvNfgBioSrOPqJ6crl1h63rIweTioOCQAD++byW+2KQZ5yM908DApwmwebi8yd3KEUTXPm0CkP2cDerHJmXf3DmO97no2/fduL31vRhxK3RWPzvoqO9Zb/muKdDR3hJWQF7KTpzYHHIdxTVCvt5Q/iZc7gvdq/lCgPdYycYuCjvpq14lmczBMrBXz5qTkrq0OBR8K4e7fsdW6SY0gPH6yxCyn3fQCUqNSSmvPw6+CK6lovdYVT/jnFm4KdGiIAA"></picture></figure><figure class="ps-ph"><picture><source srcset="assets/media/worn-1.avif" type="image/avif"><img src="assets/media/worn-1.webp" width="800" height="1000" loading="lazy" decoding="async" data-i18n-attr="alt" data-en="GRIMZ Sanzaru jacket worn, close-up with phone" data-it="Giacca GRIMZ Sanzaru indossata, primo piano con il telefono" alt="GRIMZ Sanzaru jacket worn, close-up with phone" data-lq="data:image/webp;base64,UklGRiYBAABXRUJQVlA4IBoBAABwBgCdASoYAB4APulkqk8pJaOiMBgIASAdCWgAwdAIDlaLljgVuwYVqmIoZOZb2J2BBi/9bAm1Ia3NBrAA/veBmyqvO+4m8OebzA/DIJ4CELtZKeT7MYbelAO7GAwko2OdD0PrnfQE90tNOirp9CG+w21Dkgn9TZxJ9JhMMgJG+2eHx18YQ9KiQBGan+uJPlVX7SnESojIRKofI6ikZ6rbxgm1Y/sPmw5Pi6v8HLlpdYzbsxGzsilVtbEO2BoCv0GtJ5Zs/ZCRw5J4ucmmqWVJaqm53ICQU/9NjXWwROprG3gTTALhdtsl24vP9b7UkbVC61mzDUVPveyXFssvqkbB1md8+AdOjLyP2tcrg/KN2MTSvveHCB7lOAA="></picture></figure><figure class="ps-ph"><picture><source srcset="assets/media/worn-4.avif" type="image/avif"><img src="assets/media/worn-4.webp" width="800" height="1000" loading="lazy" decoding="async" data-i18n-attr="alt" data-en="GRIMZ Sanzaru jacket worn, side view" data-it="Giacca GRIMZ Sanzaru indossata, di profilo" alt="GRIMZ Sanzaru jacket worn, side view" data-lq="data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAwBACdASoYAB4APulmqU6pJaOiMBgIASAdCUAABc6/uSMSSVPxEyNM1wAA/vVug6fEfmXRlsrxkIl1Qrzk1Fccoj/xGAZl7XB7/YL6kY4eLeF10d2GWbIdnyCbWX+9gcBV7YT1N9kq4HuVsJzcLIA8pk4qOWljCXn7/ty0I2H6vwp/PgAAAA=="></picture></figure><p class="ps-model mono" data-ps-model hidden></p></div>
+        <div class="ps-info">
+          <p class="mono eye">Drop 01 · <span class="en">Jacket</span><span class="it">Giacca</span></p>
+          <h2 class="ps-name"><span class="ps-name-a">Sanzaru</span> <span class="ps-name-b"><span class="en">Jacket</span><span class="it">Giacca</span></span></h2>
+          <div class="ps-price-row"><p class="ps-price" data-ps-price></p><span class="fx-chip" data-fx-chip hidden></span></div>
+          <p class="ps-desc" data-ps-desc></p>
+          <div class="ps-chips" role="group" data-i18n-attr="aria-label" data-en="Details you just saw" data-it="I dettagli appena visti" aria-label="Details you just saw"><button type="button" class="ps-chip" data-ps-jump="1.7"><span class="en">GRIMZ tag</span><span class="it">Tag GRIMZ</span></button><button type="button" class="ps-chip" data-ps-jump="3.3"><span class="en">Reflective panels</span><span class="it">Pannelli riflettenti</span></button><button type="button" class="ps-chip" data-ps-jump="4.2"><span class="en">Ankh zips</span><span class="it">Zip ankh</span></button><button type="button" class="ps-chip" data-ps-jump="6.05"><span class="en">Storm hood</span><span class="it">Cappuccio</span></button><button type="button" class="ps-chip" data-ps-jump="7.3"><span class="en">Three monkeys</span><span class="it">Tre scimmie</span></button></div>
+          <div class="ps-size">
+            <div class="ps-size-h"><span class="mono eye"><span class="en">Size</span><span class="it">Taglia</span> — <span data-ps-size-label>—</span></span><a class="ps-guide" href="#shop"><span class="en">Find your size</span><span class="it">Trova la tua taglia</span></a></div>
+            <div class="ps-sizes" role="group" data-i18n-attr="aria-label" data-en="Size" data-it="Taglia" aria-label="Size"><button type="button" data-ps-size="XS" aria-pressed="false">XS</button><button type="button" data-ps-size="S" aria-pressed="false">S</button><button type="button" data-ps-size="M" aria-pressed="false">M</button><button type="button" data-ps-size="L" aria-pressed="false">L</button><button type="button" data-ps-size="XL" aria-pressed="false">XL</button></div>
+            <p class="ps-fit mono" data-ps-fit hidden></p>
+          </div>
+          <p class="err" data-ps-err role="alert" hidden><span class="en">Choose your size first.</span><span class="it">Prima scegli la taglia.</span></p>
+          <p class="drop-note" data-drop-note hidden></p>
+          <button type="button" class="btn btn-pink btn-block" data-ps-add><span class="en">Add to bag</span><span class="it">Aggiungi alla borsa</span></button>
+          <div class="ps-foot">
+            <a class="ps-next link" href="#pants"><span class="en">Keep exploring: the pants</span><span class="it">Continua: il pantalone</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+            <p class="eta mono" data-eta></p>
+            <p class="ps-trust mono"><span class="en">14-day returns · Shipped worldwide</span><span class="it">Resi in 14 giorni · Spedizione ovunque</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dprog"><span class="fill" data-prog></span></div>
+  </div>
+</section>
+
+<!-- ================= UNDER THE LENS — 02 PANTS ================= -->
+<section id="pants" class="dsec sec-detail has-shop" data-sec="pants" data-dur="8.04" aria-label="Pants details">
+  <div class="dstick">
+    <div class="lgrid">
+      <div class="dframe lframe" data-cursor="scroll">
+        <div class="dclip"><video poster="assets/media/poster-pants.webp" muted playsinline preload="metadata" aria-hidden="true">
+          <source src="assets/media/detail-pants.mp4" type="video/mp4" media="(min-width: 701px)">
+          <source src="assets/media/detail-pants-m.mp4" type="video/mp4">
+        </video><img class="ps-still" data-ps-still src="assets/media/pants-front.webp" alt="" aria-hidden="true" decoding="async"></div>
+        <div class="loupe" data-hs="1.4,2.72" data-path="1.417,57,35.5;1.542,55,35.5;1.667,53.1,35.5;1.792,51.9,35.5;1.917,51,35.5;2.042,49.5,35.5;2.167,48.8,35.5;2.292,47.8,35.5;2.417,46.9,35.5;2.542,45.2,35.5;2.667,43.5,35.5;2.708,43,35.5" style="left:57%;top:35.5%"><canvas></canvas><span class="loupe-glass"></span></div>
+        <span class="dline" data-hs="1.4,2.72"><span></span></span>
+        <div class="loupe" data-hs="2.77,4.05" data-path="2.875,49.4,50.4;3,42,50.2;3.125,37.6,50;3.25,35,50;3.375,33.6,50;3.5,32.1,50;3.625,30.9,50;3.75,30,50;3.875,28.5,50;4,26.3,50;4.042,25.9,49.8" style="left:49.4%;top:50.4%"><canvas></canvas><span class="loupe-glass"></span></div>
+        <span class="dline" data-hs="2.77,4.05"><span></span></span>
+        <div class="loupe" data-hs="4.1,5.35" data-path="4.208,44.3,50.2;4.333,42.4,50.2;4.458,40.5,50;4.583,39,49.8;4.708,37.8,49.8;4.833,36.4,49.4;4.958,34.5,49.4;5.083,31.6,49.4;5.208,29.2,49.2;5.333,27.3,49" style="left:44.3%;top:50.2%"><canvas></canvas><span class="loupe-glass"></span></div>
+        <span class="dline" data-hs="4.1,5.35"><span></span></span>
+        <div class="loupe" data-hs="5.4,6.72" data-path="5.417,34.3,66.3;5.542,32.8,66;5.667,31.9,65.4;5.792,30.7,65;5.917,29.7,64.4;6.042,28.5,63.8;6.167,27.6,63.6;6.292,26.8,63.2;6.417,26.1,62.6;6.542,25.4,62.4;6.667,24.7,62;6.708,24.4,62" style="left:34.3%;top:66.3%"><canvas></canvas><span class="loupe-glass"></span></div>
+        <span class="dline" data-hs="5.4,6.72"><span></span></span>
+        <div class="loupe" data-hs="6.77,8.2" data-path="6.875,53.5,55.2;7,57.1,51.9;7.125,58.8,49.3;7.25,60,47;7.375,61,45;7.5,61.7,43.3;7.625,61.9,41.5;7.75,61.9,40.4;7.875,61.9,39.6;8,61.9,38.8" style="left:53.5%;top:55.2%"><canvas></canvas><span class="loupe-glass"></span></div>
+        <span class="dline" data-hs="6.77,8.2"><span></span></span>
+        <p class="dintro mono" data-intro><svg class="ic" viewBox="0 0 24 24"><path d="M12 3.5a5 5 0 0 1 5 5v7a5 5 0 0 1-10 0v-7a5 5 0 0 1 5-5Z M12 7v3"/></svg><span class="en">Scroll to inspect</span><span class="it">Scorri per ispezionare</span></p>
+      </div>
+      <div class="dcol">
+        <div class="dcard" data-hs="1.4,2.72" data-side="l" style="top:30%"><div class="dc-in">
+          <p class="dc-idx mono"><span class="dc-n">01</span><span class="dc-ticks" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i></span><span><span class="en">Pants</span><span class="it">Pantalone</span></span></p>
+          <h3 class="dc-t"><span class="en">Easy at the waist.</span><span class="it">Comodo in vita.</span></h3>
+          <p class="dc-p"><span class="en">Gathered elastic waistband with external bungee cords and toggles. Set your fit once, then forget it.</span><span class="it">Vita elastica arricciata con coulisse e stopper esterni. Regoli una volta, poi te ne dimentichi.</span></p>
+          <dl class="dc-spec"><div><dt><span class="en">Detail</span><span class="it">Dettaglio</span></dt><dd><span class="en">Elastic waist</span><span class="it">Vita elastica</span></dd></div><div><dt><span class="en">Position</span><span class="it">Posizione</span></dt><dd><span class="en">Waist</span><span class="it">Vita</span></dd></div></dl>
+        </div></div>
+        <div class="dcard" data-hs="2.77,4.05" data-side="l" style="top:50%"><div class="dc-in">
+          <p class="dc-idx mono"><span class="dc-n">02</span><span class="dc-ticks" aria-hidden="true"><i></i><i class="on"></i><i></i><i></i><i></i></span><span><span class="en">Pants</span><span class="it">Pantalone</span></span></p>
+          <h3 class="dc-t"><span class="en">The ankh, again.</span><span class="it">Ancora l’ankh.</span></h3>
+          <p class="dc-p"><span class="en">Thigh pocket with zip and ankh puller: the same hardware as the jacket, so the set speaks one language.</span><span class="it">Tasca sulla coscia con zip e tiretto ankh: lo stesso dettaglio della giacca, il completo parla una lingua sola.</span></p>
+          <dl class="dc-spec"><div><dt><span class="en">Detail</span><span class="it">Dettaglio</span></dt><dd><span class="en">Ankh zip pocket</span><span class="it">Tasca zip ankh</span></dd></div><div><dt><span class="en">Position</span><span class="it">Posizione</span></dt><dd><span class="en">Side</span><span class="it">Fianco</span></dd></div></dl>
+        </div></div>
+        <div class="dcard" data-hs="4.1,5.35" data-side="l" style="top:50%"><div class="dc-in">
+          <p class="dc-idx mono"><span class="dc-n">03</span><span class="dc-ticks" aria-hidden="true"><i></i><i></i><i class="on"></i><i></i><i></i></span><span><span class="en">Pants</span><span class="it">Pantalone</span></span></p>
+          <h3 class="dc-t"><span class="en">Lightning down the leg.</span><span class="it">Una saetta lungo la gamba.</span></h3>
+          <p class="dc-p"><span class="en">Reflective panels cut like lightning down the leg, edged in white piping. Under headlights, they flash.</span><span class="it">Pannelli riflettenti tagliati a saetta lungo la gamba, bordati da un profilo bianco. Sotto i fari, brillano.</span></p>
+          <dl class="dc-spec"><div><dt><span class="en">Detail</span><span class="it">Dettaglio</span></dt><dd><span class="en">Lightning panels</span><span class="it">Pannelli a saetta</span></dd></div><div><dt><span class="en">Position</span><span class="it">Posizione</span></dt><dd><span class="en">Legs</span><span class="it">Gambe</span></dd></div></dl>
+        </div></div>
+        <div class="dcard" data-hs="5.4,6.72" data-side="l" style="top:64%"><div class="dc-in">
+          <p class="dc-idx mono"><span class="dc-n">04</span><span class="dc-ticks" aria-hidden="true"><i></i><i></i><i></i><i class="on"></i><i></i></span><span><span class="en">Pants</span><span class="it">Pantalone</span></span></p>
+          <h3 class="dc-t"><span class="en">Open at the ankle.</span><span class="it">Si apre alla caviglia.</span></h3>
+          <p class="dc-p"><span class="en">Side zips with ankh pullers and snap buttons at the hem: stack it over your sneakers or open it wide.</span><span class="it">Zip laterali con tiretti ankh e bottoni a pressione sull’orlo: lo porti raccolto sulle sneakers o aperto.</span></p>
+          <dl class="dc-spec"><div><dt><span class="en">Detail</span><span class="it">Dettaglio</span></dt><dd><span class="en">Ankle zips</span><span class="it">Zip alla caviglia</span></dd></div><div><dt><span class="en">Position</span><span class="it">Posizione</span></dt><dd><span class="en">Hem</span><span class="it">Fondo gamba</span></dd></div></dl>
+        </div></div>
+        <div class="dcard" data-hs="6.77,8.2" data-side="r" style="top:45%"><div class="dc-in">
+          <p class="dc-idx mono"><span class="dc-n">05</span><span class="dc-ticks" aria-hidden="true"><i></i><i></i><i></i><i></i><i class="on"></i></span><span><span class="en">Pants</span><span class="it">Pantalone</span></span></p>
+          <h3 class="dc-t"><span class="en">Room to move.</span><span class="it">Spazio per muoversi.</span></h3>
+          <p class="dc-p"><span class="en">GRIMZ on the thigh, room in the leg. A wide, relaxed cut that moves the way you do.</span><span class="it">GRIMZ sulla coscia, spazio nella gamba. Un taglio largo e rilassato che si muove con te.</span></p>
+          <dl class="dc-spec"><div><dt><span class="en">Detail</span><span class="it">Dettaglio</span></dt><dd><span class="en">Wide leg</span><span class="it">Gamba larga</span></dd></div><div><dt><span class="en">Position</span><span class="it">Posizione</span></dt><dd><span class="en">Leg</span><span class="it">Gamba</span></dd></div></dl>
+        </div></div>
+      </div>
+    </div>
+    <!-- product shop: the video frame lands in .ps-slot and becomes the product image (main.js) -->
+    <div class="pshop" data-pshop="pants" aria-hidden="true" inert>
+      <div class="ps-grid">
+        <div class="ps-slot" data-ps-slot>
+          <button type="button" class="flash-btn ps-flash" data-ps-flash aria-pressed="false"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3 5 13.5h6L10 21l8-10.5h-6L13 3Z"/></svg><span class="f-off"><span class="en">Try the flash</span><span class="it">Prova il flash</span></span><span class="f-on"><span class="en">Flash on</span><span class="it">Flash attivo</span></span></button>
+          <div class="ps-views" role="group" data-i18n-attr="aria-label" data-en="View" data-it="Vista" aria-label="View">
+            <button type="button" class="on" data-ps-view="0" aria-pressed="true"><span class="en">Front</span><span class="it">Fronte</span></button>
+            <button type="button" data-ps-view="1" aria-pressed="false"><span class="en">Side</span><span class="it">Lato</span></button>
+            <button type="button" data-ps-view="2" aria-pressed="false"><span class="en">Back</span><span class="it">Retro</span></button>
+          </div>
+        </div>
+        <div class="ps-photos"><figure class="ps-ph ps-prod"><img src="assets/media/pants-front.webp" width="1024" height="1536" loading="lazy" decoding="async" data-i18n-attr="alt" data-en="GRIMZ Sanzaru pants, front" data-it="Pantalone GRIMZ Sanzaru, fronte" alt="GRIMZ Sanzaru pants, front" data-lq="data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAADQBACdASoYACQAPulkqU0pJaQiKrgN+SAdCWgAzBwitrQbzqx/bE9uAlUiUAz4AAD+93MXX89ci70eOT37tGhJ+KFW5ggxYGEPuu/1RPAOdzwEGe1/di9g4Azn/yqub5fwZNIgI/29eHks5hsjj9IJk2CV8VvfYBHcTc8POrWQyZLJLylf4Vlyz+SKZhvNjCewuCbN1qfMKdKhS102htHUn4rRBPxZvTxf5P7Kxefi0Ggay8wAAA=="><button type="button" class="flash-btn ps-flash" data-ps-flash aria-pressed="false"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3 5 13.5h6L10 21l8-10.5h-6L13 3Z"/></svg><span class="f-off"><span class="en">Try the flash</span><span class="it">Prova il flash</span></span><span class="f-on"><span class="en">Flash on</span><span class="it">Flash attivo</span></span></button></figure><figure class="ps-ph ps-prod"><img src="assets/media/pants-side.webp" width="1024" height="1536" loading="lazy" decoding="async" data-i18n-attr="alt" data-en="GRIMZ Sanzaru pants, side" data-it="Pantalone GRIMZ Sanzaru, lato" alt="GRIMZ Sanzaru pants, side" data-lq="data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAACwBACdASoYACQAPtFWnE0oJKKiNUwBABoJZgAAeiB66C5//IjIJJZ36Gqtk7tAAP73cxeqcCLwN/KhmwbvyxpixzYmtlTwaT4aNiKyFPo+ckj4h49SFcsvh1ZzVr5j5ZZWyZE687RIilEiTUyjT43nzgnQ7ylCjtntm+s5+otj55EbsAA="></figure><figure class="ps-ph ps-prod"><img src="assets/media/pants-back.webp" width="1024" height="1536" loading="lazy" decoding="async" data-i18n-attr="alt" data-en="GRIMZ Sanzaru pants, back" data-it="Pantalone GRIMZ Sanzaru, retro" alt="GRIMZ Sanzaru pants, back" data-lq="data:image/webp;base64,UklGRuAAAABXRUJQVlA4INQAAABQBgCdASoYACQAPulkrVIpJKQiqrgIASAdCWgADny3Gl/K83vXHMQdm7ru8zIOP+TeBoMvkCYNNoZbAAD+93hK522kGgacym326jpo8fn+F2cIZWm1Jfw6hztC6OWmsb1Uq1HIDX97GHIPAGhP18m+wdigloQTmP15YACuBwgF7mm2wNxcoD0XjyQfpZD887LtKgQ/JzYDT3b3ILFrKDmDxI1kwQE7lD3p09XaVWYkZsNyPoq/J32WpXHH8EMubSbWSt8MzYOH/Xh2a+g4DkY37pCAAA=="></figure><figure class="ps-ph"><picture><source srcset="assets/media/worn-3.avif" type="image/avif"><img src="assets/media/worn-3.webp" width="800" height="1000" loading="lazy" decoding="async" data-i18n-attr="alt" data-en="GRIMZ Sanzaru pants worn by three friends walking" data-it="Pantalone GRIMZ Sanzaru indossato da tre amici che camminano" alt="GRIMZ Sanzaru pants worn by three friends walking" data-lq="data:image/webp;base64,UklGRu4AAABXRUJQVlA4IOIAAACwBQCdASoYAB4APulipE2pJaMiMBgMASAdCUAAzQNIEz4SfriEtl7lQ3Hh+a+nyq/nWXztwmwA/vdzE5nnudvszDDPChkQfd9ONiL6BsYkouLawS4z5AhXvSEZnyNUfspOHqRHzr07ec1yztyiwQ+8AYMfHbLUYjGl/6dqIOkt9tsQn9QkPp0LzNeWnFWlvc/VAz4cm3zw5kb8LLicHhD4yEs7/2+BHNfuN8nBM0pJ6p47EFHFBVLzDYm9bJcOaGLCGcMDMN68DtznAAKhyyzU5xPrTcV9zno9GB4apcMP4AAA"></picture></figure><figure class="ps-ph"><picture><source srcset="assets/media/court-side.avif" type="image/avif"><img src="assets/media/court-side.webp" width="800" height="1000" loading="lazy" decoding="async" data-i18n-attr="alt" data-en="GRIMZ Sanzaru set, side view at sunset" data-it="Completo GRIMZ Sanzaru, di profilo al tramonto" alt="GRIMZ Sanzaru set, side view at sunset" data-lq="data:image/webp;base64,UklGRhQBAABXRUJQVlA4IAgBAABwBwCdASoYACQAPulkqFApJSOiqrgMASAdCWgAtulIvY21Vujr0MA6zNO4vmYW9wxQfG9ScdhAaJr+RK5Tp0nfpP2fwAD5rSG3p39NntgMJ6fsDjKJZutDB8WyN4RLcFv9sLvbS7QSOybPRxrEHW7Lg0tDCYoWjz5HXdJ/00joq/nEdQRn4dVdjNZCukJsyOZWO3cfdnCVGIfWNhobhHZ9BwIM9y2ES2QPeMRqqqll4+mQGnnaeGhgF2oVh+aQg5IXCJWgwIHHCpXEfVw9NTLnyTQVHjFF0H9I/jLRNjjfXgK/E0sOFdUmsM2Z3G2JYXuLDf+S/KxWheDRhXW66dtiNbLnTcqAAAA="></picture></figure><p class="ps-model mono" data-ps-model hidden></p></div>
+        <div class="ps-info">
+          <p class="mono eye">Drop 01 · <span class="en">Pants</span><span class="it">Pantalone</span></p>
+          <h2 class="ps-name"><span class="ps-name-a">Sanzaru</span> <span class="ps-name-b"><span class="en">Pants</span><span class="it">Pantalone</span></span></h2>
+          <div class="ps-price-row"><p class="ps-price" data-ps-price></p><span class="fx-chip" data-fx-chip hidden></span></div>
+          <p class="ps-desc" data-ps-desc></p>
+          <div class="ps-chips" role="group" data-i18n-attr="aria-label" data-en="Details you just saw" data-it="I dettagli appena visti" aria-label="Details you just saw"><button type="button" class="ps-chip" data-ps-jump="2.0"><span class="en">Elastic waist</span><span class="it">Vita elastica</span></button><button type="button" class="ps-chip" data-ps-jump="3.4"><span class="en">Ankh zip pocket</span><span class="it">Tasca zip ankh</span></button><button type="button" class="ps-chip" data-ps-jump="4.7"><span class="en">Lightning panels</span><span class="it">Pannelli a saetta</span></button><button type="button" class="ps-chip" data-ps-jump="6.0"><span class="en">Ankle zips</span><span class="it">Zip alla caviglia</span></button><button type="button" class="ps-chip" data-ps-jump="7.4"><span class="en">Wide leg</span><span class="it">Gamba larga</span></button></div>
+          <div class="ps-size">
+            <div class="ps-size-h"><span class="mono eye"><span class="en">Size</span><span class="it">Taglia</span> — <span data-ps-size-label>—</span></span><a class="ps-guide" href="#shop"><span class="en">Find your size</span><span class="it">Trova la tua taglia</span></a></div>
+            <div class="ps-sizes" role="group" data-i18n-attr="aria-label" data-en="Size" data-it="Taglia" aria-label="Size"><button type="button" data-ps-size="XS" aria-pressed="false">XS</button><button type="button" data-ps-size="S" aria-pressed="false">S</button><button type="button" data-ps-size="M" aria-pressed="false">M</button><button type="button" data-ps-size="L" aria-pressed="false">L</button><button type="button" data-ps-size="XL" aria-pressed="false">XL</button></div>
+            <p class="ps-fit mono" data-ps-fit hidden></p>
+          </div>
+          <p class="err" data-ps-err role="alert" hidden><span class="en">Choose your size first.</span><span class="it">Prima scegli la taglia.</span></p>
+          <p class="drop-note" data-drop-note hidden></p>
+          <button type="button" class="btn btn-pink btn-block" data-ps-add><span class="en">Add to bag</span><span class="it">Aggiungi alla borsa</span></button>
+          <div class="ps-foot">
+            <a class="ps-next link" href="#manifesto"><span class="en">Keep exploring</span><span class="it">Continua a esplorare</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+            <p class="eta mono" data-eta></p>
+            <p class="ps-trust mono"><span class="en">14-day returns · Shipped worldwide</span><span class="it">Resi in 14 giorni · Spedizione ovunque</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dprog"><span class="fill" data-prog></span></div>
+  </div>
+</section>
+
+<!-- ================= MANIFESTO ================= -->
+<section id="manifesto" class="mani">
+  <div class="wrap mani-grid">
+    <div class="mani-img" data-curtain><picture><source srcset="assets/media/jacket-back.avif" type="image/avif"><img data-parallax src="assets/media/jacket-back.webp" width="1024" height="1536" loading="lazy" decoding="async"
+      data-i18n-attr="alt" data-en="Back of the pink GRIMZ jacket: three wise monkeys with gold grillz and WORK HARD CRY LESS on the hood" data-it="Retro della giacca GRIMZ rosa: tre scimmie sagge con grillz d’oro e WORK HARD CRY LESS sul cappuccio"
+      alt="Back of the pink GRIMZ jacket: three wise monkeys with gold grillz and WORK HARD CRY LESS on the hood" data-lq="data:image/webp;base64,UklGRugAAABXRUJQVlA4INwAAACQBQCdASoYACQAPulmrE+pJaQiJWzJIB0JYgDQGYvNfgBioSrOPqJ6crl1h63rIweTioOCQAD++byW+2KQZ5yM908DApwmwebi8yd3KEUTXPm0CkP2cDerHJmXf3DmO97no2/fduL31vRhxK3RWPzvoqO9Zb/muKdDR3hJWQF7KTpzYHHIdxTVCvt5Q/iZc7gvdq/lCgPdYycYuCjvpq14lmczBMrBXz5qTkrq0OBR8K4e7fsdW6SY0gPH6yxCyn3fQCUqNSSmvPw6+CK6lovdYVT/jnFm4KdGiIAA"></picture></div>
+    <div class="mani-copy" data-reveal>
+      <p class="mono eye">Manifesto</p>
+      <h2 class="disp h-l">Work hard.<br>Cry less.</h2>
+      <p class="lead"><span class="en">Three monkeys. Three rules. Whoever lives by them doesn’t need to explain.</span><span class="it">Tre scimmie. Tre regole. Chi le segue non ha bisogno di spiegarsi.</span></p>
+      <ol class="mani-list">
+        <li><span class="mono"><span class="en">See no evil</span><span class="it">Non vedo</span></span><p><span class="en">Eyes on your work, not on theirs.</span><span class="it">Occhi sul tuo lavoro, non su quello degli altri.</span></p></li>
+        <li><span class="mono"><span class="en">Hear no evil</span><span class="it">Non sento</span></span><p><span class="en">The noise stays outside.</span><span class="it">Il rumore resta fuori.</span></p></li>
+        <li><span class="mono"><span class="en">Speak no evil</span><span class="it">Non parlo</span></span><p><span class="en">Say less. Let the results talk.</span><span class="it">Parla poco. Lascia parlare i risultati.</span></p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WORN BY ================= -->
+<section id="worn" data-amb="pink" class="worn">
+  <div class="wrap">
+    <div class="worn-head" data-reveal>
+      <div>
+        <p class="mono eye">Worn by</p>
+        <h2 class="disp h-l"><span class="en">The GRIMZ<br>community.</span><span class="it">La community<br>GRIMZ.</span></h2>
+      </div>
+      <p class="lead"><span class="en">Tag us on Instagram wearing Drop 01 to be featured here.</span><span class="it">Taggaci su Instagram con il Drop 01 addosso per comparire qui.</span></p>
+    </div>
+    <div class="worn-grid">
+      <figure class="wt wt-tall" data-curtain><picture><source srcset="assets/media/worn-1.avif" type="image/avif"><img src="assets/media/worn-1.webp" width="800" height="1000" loading="lazy" decoding="async" alt="" data-lq="data:image/webp;base64,UklGRiYBAABXRUJQVlA4IBoBAABwBgCdASoYAB4APulkqk8pJaOiMBgIASAdCWgAwdAIDlaLljgVuwYVqmIoZOZb2J2BBi/9bAm1Ia3NBrAA/veBmyqvO+4m8OebzA/DIJ4CELtZKeT7MYbelAO7GAwko2OdD0PrnfQE90tNOirp9CG+w21Dkgn9TZxJ9JhMMgJG+2eHx18YQ9KiQBGan+uJPlVX7SnESojIRKofI6ikZ6rbxgm1Y/sPmw5Pi6v8HLlpdYzbsxGzsilVtbEO2BoCv0GtJ5Zs/ZCRw5J4ucmmqWVJaqm53ICQU/9NjXWwROprG3gTTALhdtsl24vP9b7UkbVC61mzDUVPveyXFssvqkbB1md8+AdOjLyP2tcrg/KN2MTSvveHCB7lOAA="></picture><figcaption class="mono">Drop 01</figcaption></figure>
+      <figure class="wt" data-curtain><picture><source srcset="assets/media/worn-2.avif" type="image/avif"><img src="assets/media/worn-2.webp" width="800" height="1000" loading="lazy" decoding="async" alt="" data-lq="data:image/webp;base64,UklGRvYAAABXRUJQVlA4IOoAAADwBQCdASoYAB4APulipE2pJaMiMBgMASAdCWoApyX6oBc74KL88mhXFIE7ClKZmXdri82QyJqaYAD3q/gtNfvLzXVsdT43SEJiqp8Vzckk0Bc486K1r/AtLTvtLQnEIRm2WSOFHcTN7+ZUJub5GGzm65wRhXwwT6Fl+dlX80HtAuhdiVU8wzzytCAzZNctch0lTr/8bU+VXDfsr/i1Gb6oIvh55JiR0ASIblho0msIQv8a4hafO3H62LQDq18fA1EB6ShWOLeGJEENK7QfOP+i1ww2e7vbDUNHMBxBekKB1Hu0fQxn9v2oAAA="></picture><figcaption class="mono">Drop 01</figcaption></figure>
+      <figure class="wt" data-curtain><picture><source srcset="assets/media/worn-3.avif" type="image/avif"><img src="assets/media/worn-3.webp" width="800" height="1000" loading="lazy" decoding="async" alt="" data-lq="data:image/webp;base64,UklGRu4AAABXRUJQVlA4IOIAAACwBQCdASoYAB4APulipE2pJaMiMBgMASAdCUAAzQNIEz4SfriEtl7lQ3Hh+a+nyq/nWXztwmwA/vdzE5nnudvszDDPChkQfd9ONiL6BsYkouLawS4z5AhXvSEZnyNUfspOHqRHzr07ec1yztyiwQ+8AYMfHbLUYjGl/6dqIOkt9tsQn9QkPp0LzNeWnFWlvc/VAz4cm3zw5kb8LLicHhD4yEs7/2+BHNfuN8nBM0pJ6p47EFHFBVLzDYm9bJcOaGLCGcMDMN68DtznAAKhyyzU5xPrTcV9zno9GB4apcMP4AAA"></picture><figcaption class="mono">Drop 01</figcaption></figure>
+      <figure class="wt" data-curtain><picture><source srcset="assets/media/worn-4.avif" type="image/avif"><img src="assets/media/worn-4.webp" width="800" height="1000" loading="lazy" decoding="async" alt="" data-lq="data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAwBACdASoYAB4APulmqU6pJaOiMBgIASAdCUAABc6/uSMSSVPxEyNM1wAA/vVug6fEfmXRlsrxkIl1Qrzk1Fccoj/xGAZl7XB7/YL6kY4eLeF10d2GWbIdnyCbWX+9gcBV7YT1N9kq4HuVsJzcLIA8pk4qOWljCXn7/ty0I2H6vwp/PgAAAA=="></picture><figcaption class="mono">Drop 01</figcaption></figure>
+      <figure class="wt" data-curtain><picture><source srcset="assets/media/worn-5.avif" type="image/avif"><img src="assets/media/worn-5.webp" width="800" height="1000" loading="lazy" decoding="async" alt="" data-lq="data:image/webp;base64,UklGRg4BAABXRUJQVlA4IAIBAABwBgCdASoYAB4APuleq0+pJKOiMBgIASAdCUABAgcQN3lshGXf3h4e78qj3eoMCKLis/KjrjsJjqassAAA/vhSVGo4ekL/gQttHFHjMKztMsDDz2UEeOCsj/hth/6viHzg745Tjbajuc2jyLysrIuU/l166R8mW9uUijXztGen2CbWq+/TI0fkEICcjMc6CuGaoJi4sbHt+Ly5datN1OJe5e81q7WLZ/2NEuEnyqLiDPys4+xZ+YEr/BxwkqERbwrUTlwr/qjykMZPVTXhhJjRYflwyTjQuRt8/bXf8Im+chECnjN3o5keT0KM1c3EDfWUqODjs8ZqHcaOBp+eEnrQAAA="></picture><figcaption class="mono">Drop 01</figcaption></figure>
+      <figure class="wt wt-tall" data-curtain><picture><source srcset="assets/media/worn-6.avif" type="image/avif"><img src="assets/media/worn-6.webp" width="800" height="1000" loading="lazy" decoding="async" alt="" data-lq="data:image/webp;base64,UklGRu4AAABXRUJQVlA4IOIAAACQBQCdASoYAB4APulkqU6pJaOiKA1RIB0JagCsHYCQZ23AAOUVMuoJZT34k0HZZJr/111gAADKo6iAL3Frp32S/r1xHNF1vtWIojFYrvwaOKgA8zvW7348wcDqUmEsOinC3TGTth5P05CvOOBuxTvtPMH1g1iQa4H9hvx1L6bxUmoZgzCRLo2NN2w+gb0zp5AeWSRr/RguIj68dqb+6061ee3ElRS8CUnuodjpWWBG1mohmO4d6TXtjQohewlL6hDZn3Kvk2+wVhj/lldSZahCREirIsp0UrCfystflJlbhoAA"></picture><figcaption class="mono">Drop 01</figcaption></figure>
+    </div>
+    <div class="reviews">
+      <blockquote class="rv" data-reveal>
+        <p class="stars" aria-label="5/5">★★★★★</p>
+        <p class="rv-fit mono"><span><span class="en">Fit</span><span class="it">Vestibilità</span></span><span class="fitbar" aria-hidden="true"><i style="left:50%"></i></span><span><span class="en">True to size</span><span class="it">Giusta</span></span></p>
+        <p class="rv-t"><span class="en">“Heavier than I expected, in the best way. The reflective panels at night are unreal.”</span><span class="it">“Più pesante di quanto pensassi, nel senso migliore. I pannelli riflettenti di notte sono pazzeschi.”</span></p>
+        <footer class="mono"><span class="en">Sample review · Track Set</span><span class="it">Recensione di esempio · Completo</span></footer>
+      </blockquote>
+      <blockquote class="rv" data-reveal>
+        <p class="stars" aria-label="5/5">★★★★★</p>
+        <p class="rv-fit mono"><span><span class="en">Fit</span><span class="it">Vestibilità</span></span><span class="fitbar" aria-hidden="true"><i style="left:62%"></i></span><span><span class="en">Slightly roomy (oversized)</span><span class="it">Un po’ ampia (oversize)</span></span></p>
+        <p class="rv-t"><span class="en">“Took my usual size: oversized exactly like the photos. Everyone notices the monkeys on the back.”</span><span class="it">“Ho preso la mia taglia: oversize esattamente come in foto. Le scimmie sulla schiena le notano tutti.”</span></p>
+        <footer class="mono"><span class="en">Sample review · Track Set</span><span class="it">Recensione di esempio · Completo</span></footer>
+      </blockquote>
+      <blockquote class="rv" data-reveal>
+        <p class="stars" aria-label="5/5">★★★★★</p>
+        <p class="rv-fit mono"><span><span class="en">Fit</span><span class="it">Vestibilità</span></span><span class="fitbar" aria-hidden="true"><i style="left:50%"></i></span><span><span class="en">True to size</span><span class="it">Giusta</span></span></p>
+        <p class="rv-t"><span class="en">“The ankh zips are the detail that makes it. The package felt like a drop, not an order.”</span><span class="it">“Le zip ankh sono il dettaglio che fa la differenza. Il pacco sembrava un drop, non un ordine.”</span></p>
+        <footer class="mono"><span class="en">Sample review · Jacket</span><span class="it">Recensione di esempio · Giacca</span></footer>
+      </blockquote>
+    </div>
+    <p class="mono worn-note"><span class="en">Preview: campaign photos and sample reviews, to be replaced with real ones.</span><span class="it">Anteprima: foto della campagna e recensioni di esempio, da sostituire con quelle reali.</span></p>
+  </div>
+</section>
+
+<!-- ================= SHOP ================= -->
+<section id="shop" data-amb="pink" class="shop">
+  <div class="wrap shop-grid">
+    <div class="gal">
+      <div class="thumbs" data-thumbs><!-- rendered by main.js --></div>
+      <div class="main-img"><img data-main-img data-vt="product" data-fly-src src="assets/media/set-front.webp" width="1024" height="1536" alt="GRIMZ Sanzaru Track Set — front"><button type="button" class="mi-btn mi-zoom" data-action="zoom" data-cursor="zoom" data-i18n-attr="aria-label" data-en="Zoom" data-it="Ingrandisci" aria-label="Zoom"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 4a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Z M15.3 15.3 20 20 M10.5 7.5v6 M7.5 10.5h6"/></svg></button><button type="button" class="mi-btn mi-wish" data-wish-current aria-pressed="false" data-i18n-attr="aria-label" data-en="Save for later" data-it="Salva per dopo" aria-label="Save for later"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg></button><div class="mi-dots" data-mi-dots role="group" aria-label="Views"></div><button type="button" class="flash-btn mi-flash" data-flash aria-pressed="false"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3 5 13.5h6L10 21l8-10.5h-6L13 3Z"/></svg><span class="f-off"><span class="en">Try the flash</span><span class="it">Prova il flash</span></span><span class="f-on"><span class="en">Flash on</span><span class="it">Flash attivo</span></span></button></div>
+    </div>
+
+    <div class="buy">
+      <p class="mono eye"><span class="en">Drop 01 — Limited run · <span data-pieces>[N]</span> pieces</span><span class="it">Drop 01 — Tiratura limitata · <span data-pieces>[N]</span> pezzi</span></p>
+      <h2 class="disp buy-title">Sanzaru<br><span data-vname>Track Set</span></h2>
+      <div class="price-row">
+        <p class="price buy-price" data-current-price>€109.99</p>
+        <span class="save" data-save hidden></span>
+        <span class="fx-chip" data-fx-chip hidden></span>
+      </div>
+      <p class="mute install" data-install hidden></p>
+      <p class="piece mono"><span class="en">Your piece will be</span><span class="it">Il tuo pezzo sarà il</span> <strong data-piece-no>№ 001</strong></p>
+      <p class="mute" data-vdesc></p>
+
+      <div class="seg" role="group" data-i18n-attr="aria-label" data-en="Choose what to buy" data-it="Scegli cosa acquistare" aria-label="Choose what to buy">
+        <button type="button" data-variant="set" class="on" aria-pressed="true"><span class="en">Track Set</span><span class="it">Completo</span></button>
+        <button type="button" data-variant="jacket" aria-pressed="false"><span class="en">Jacket</span><span class="it">Giacca</span></button>
+        <button type="button" data-variant="pants" aria-pressed="false"><span class="en">Pants</span><span class="it">Pantalone</span></button>
+      </div>
+
+      <div>
+        <div class="row-between">
+          <p class="mono"><span class="en">Size</span><span class="it">Taglia</span> — <span data-size-label>—</span></p>
+          <button type="button" class="guide-btn" data-action="guide" aria-expanded="false"><span class="en">Find your size</span><span class="it">Trova la tua taglia</span></button>
+        </div>
+        <div class="guide" data-guide hidden>
+          <p class="guide-t"><span class="en">Fit finder</span><span class="it">Consigliatore di taglia</span></p>
+          <form class="finder" data-finder novalidate>
+            <label><span class="mono"><span class="en">Height</span><span class="it">Altezza</span> (cm)</span><input type="number" name="h" min="140" max="215" inputmode="numeric" placeholder="178" required></label>
+            <label><span class="mono"><span class="en">Weight</span><span class="it">Peso</span> (kg)</span><input type="number" name="w" min="40" max="160" inputmode="numeric" placeholder="72"></label>
+            <button type="submit" class="btn btn-line"><span class="en">Suggest</span><span class="it">Consiglia</span></button>
+          </form>
+          <p class="finder-out" data-finder-out hidden></p>
+          <div class="seg seg-sm" role="group" data-i18n-attr="aria-label" data-en="Measurements" data-it="Misure" aria-label="Measurements">
+            <button type="button" class="on" data-chart-mode="body" aria-pressed="true"><span class="en">Your body</span><span class="it">Il tuo corpo</span></button>
+            <button type="button" data-chart-mode="garment" aria-pressed="false"><span class="en">The garment</span><span class="it">Il capo</span></button>
+          </div>
+          <div class="chart-wrap">
+            <table class="chart" data-chart></table>
+          </div>
+          <p class="mono mute chart-note" data-chart-note><span class="en">Body measurements · oversized fit · indicative values</span><span class="it">Misure del corpo · vestibilità oversize · valori indicativi</span></p>
+        </div>
+        <div class="sizes" role="group" data-i18n-attr="aria-label" data-en="Size" data-it="Taglia" aria-label="Size">
+          <button type="button" data-size="XS" aria-pressed="false">XS</button>
+          <button type="button" data-size="S" aria-pressed="false">S</button>
+          <button type="button" data-size="M" aria-pressed="false">M</button>
+          <button type="button" data-size="L" aria-pressed="false">L</button>
+          <button type="button" data-size="XL" aria-pressed="false">XL</button>
+        </div>
+        <div class="fit" data-fit hidden></div>
+        <p class="err" data-size-err role="alert" hidden><span class="en">Choose your size first.</span><span class="it">Prima scegli la taglia.</span></p>
+      </div>
+
+      <p class="drop-note" data-drop-note hidden></p>
+      <button type="button" class="btn btn-pink btn-block btn-xl" data-action="add"><span data-add-label>Add to bag — €109.99</span></button>
+      <form class="bis" data-bis data-waitlist hidden novalidate>
+        <p class="bis-t"><span data-bis-text></span></p>
+        <div class="news-form"><label class="sr" for="bis-email">Email</label><input id="bis-email" type="email" autocomplete="email" required data-i18n-attr="placeholder" data-en="Your email" data-it="La tua email" placeholder="Your email"><button class="btn btn-line" type="submit"><span class="en">Notify me</span><span class="it">Avvisami</span></button></div>
+      </form>
+      <p class="news-ok" data-waitlist-ok hidden><span class="en">Done. We’ll write once, when your size is back.</span><span class="it">Fatto. Ti scriviamo una volta sola, quando la tua taglia torna.</span></p>
+      <p class="eta mono" data-eta></p>
+      <div class="express">
+        <p class="mono mute"><span class="en">Express checkout</span><span class="it">Pagamento rapido</span></p>
+        <div class="express-row">
+          <button type="button" class="xp" data-action="express">Apple Pay</button>
+          <button type="button" class="xp" data-action="express">Google Pay</button>
+          <button type="button" class="xp" data-action="express">PayPal</button>
+        </div>
+      </div>
+      <ul class="trust">
+        <li><svg class="ic" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0Z M3.5 9h17 M3.5 15h17 M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9 M12 3C9.5 5.7 8.2 8.7 8.2 12s1.3 6.3 3.8 9"/></svg><span class="en">Shipped worldwide</span><span class="it">Spedizione in tutto il mondo</span></li>
+        <li><svg class="ic" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.3-5.6 M4 4v4h4"/></svg><span class="en">14 days to return</span><span class="it">14 giorni per il reso</span></li>
+        <li><svg class="ic" viewBox="0 0 24 24"><path d="M6 10V8a6 6 0 0 1 12 0v2 M5 10h14v10H5z M12 14v2"/></svg><span class="en">Secure payments</span><span class="it">Pagamenti sicuri</span></li>
+        <li><svg class="ic" viewBox="0 0 24 24"><path d="M4 6h16v12H4z M8 10h5 M8 14h3 M16 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/></svg><span class="en">Numbered, verifiable piece</span><span class="it">Pezzo numerato e verificabile</span></li>
+      </ul>
+
+      <div class="acc">
+        <details>
+          <summary><span><span class="en">Details &amp; materials</span><span class="it">Dettagli e materiali</span></span><svg class="ic" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <div class="acc-b">
+            <ul class="en">
+              <li>Reflective lightning panels with white piping</li>
+              <li>Ankh-shaped zip pullers on every pocket</li>
+              <li>Three wise monkeys on the back, WORK HARD CRY LESS on the hood</li>
+              <li>Jacket: storm hood with bungee toggles, elastic hem</li>
+              <li>Pants: elastic waist with toggles, side ankle zips with snaps</li>
+            </ul>
+            <ul class="it">
+              <li>Pannelli riflettenti a saetta con profilo bianco</li>
+              <li>Tiretti delle zip a forma di ankh su ogni tasca</li>
+              <li>Tre scimmie sagge sulla schiena, WORK HARD CRY LESS sul cappuccio</li>
+              <li>Giacca: cappuccio con coulisse e stopper, orlo elastico</li>
+              <li>Pantalone: vita elastica con stopper, zip laterali alla caviglia con bottoni</li>
+            </ul>
+            <dl class="mat" data-materials></dl>
+          </div>
+        </details>
+        <details>
+          <summary><span><span class="en">Shipping &amp; returns</span><span class="it">Spedizioni e resi</span></span><svg class="ic" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <div class="acc-b"><span class="en">We ship worldwide; options and costs are shown at checkout. You have 14 days from delivery to withdraw — see the <a href="termini.html">terms of sale</a>.</span><span class="it">Spediamo in tutto il mondo; opzioni e costi li vedi al checkout. Hai 14 giorni dalla consegna per recedere: leggi le <a href="termini.html">condizioni di vendita</a>.</span></div>
+        </details>
+        <details>
+          <summary><span><span class="en">Care</span><span class="it">Cura del capo</span></span><svg class="ic" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <div class="acc-b" data-care></div>
+        </details>
+        <details>
+          <summary><span><span class="en">Numbered &amp; authentic</span><span class="it">Numerato e autentico</span></span><svg class="ic" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></summary>
+          <div class="acc-b"><span class="en">Every piece has its own number, in order of purchase, printed on the card in the box. The code on the garment opens its authenticity page. <a href="verifica.html">Verify a piece</a>.</span><span class="it">Ogni capo ha il suo numero, in ordine di acquisto, stampato sulla card nella confezione. Il codice sul capo apre la sua pagina di autenticità. <a href="verifica.html">Verifica un pezzo</a>.</span></div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STORY — teaser of storia.html ================= -->
+<section id="story" class="st-teaser" aria-label="Story">
+  <div class="wrap">
+    <a class="st-tz" href="storia.html" data-reveal>
+      <picture><source srcset="assets/media/court-side.avif" type="image/avif"><img data-parallax src="assets/media/court-side.webp" width="1024" height="1536" loading="lazy" decoding="async" alt="" aria-hidden="true" data-vt="story-hero" data-lq="data:image/webp;base64,UklGRhQBAABXRUJQVlA4IAgBAABwBwCdASoYACQAPulkqFApJSOiqrgMASAdCWgAtulIvY21Vujr0MA6zNO4vmYW9wxQfG9ScdhAaJr+RK5Tp0nfpP2fwAD5rSG3p39NntgMJ6fsDjKJZutDB8WyN4RLcFv9sLvbS7QSOybPRxrEHW7Lg0tDCYoWjz5HXdJ/00joq/nEdQRn4dVdjNZCukJsyOZWO3cfdnCVGIfWNhobhHZ9BwIM9y2ES2QPeMRqqqll4+mQGnnaeGhgF2oVh+aQg5IXCJWgwIHHCpXEfVw9NTLnyTQVHjFF0H9I/jLRNjjfXgK/E0sOFdUmsM2Z3G2JYXuLDf+S/KxWheDRhXW66dtiNbLnTcqAAAA="></picture>
+      <div class="st-tz-copy">
+        <p class="mono eye"><span class="en">The story</span><span class="it">La storia</span></p>
+        <h2 class="st-tz-h"><span class="en">Before the brand, there was the crew.</span><span class="it">Prima del brand, c’era la crew.</span></h2>
+        <p class="lead"><span class="en">A neighbourhood, a group of friends, three rules. Told by the founder.</span><span class="it">Un quartiere, un gruppo di amici, tre regole. Raccontato dal fondatore.</span></p>
+        <span class="btn btn-line"><span class="en">Read the story</span><span class="it">Leggi la storia</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ================= WORLDWIDE — spinning globe ================= -->
+<section id="world" data-amb="cold" class="world">
+  <div class="wrap world-grid">
+    <div class="world-copy" data-reveal>
+      <p class="mono eye"><span class="en">Worldwide shipping</span><span class="it">Spedizioni in tutto il mondo</span></p>
+      <h2 class="disp h-l"><span class="en">Order from<br>anywhere.</span><span class="it">Ordina<br>da ovunque.</span></h2>
+      <p class="lead"><span class="en">From our studio to your door, wherever it is. Shipping options and costs are shown at checkout, before you pay.</span><span class="it">Dal nostro studio alla tua porta, ovunque sia. Opzioni e costi di spedizione li vedi al checkout, prima di pagare.</span></p>
+      <ul class="world-facts">
+        <li><strong><span class="en">Worldwide</span><span class="it">Ovunque</span></strong><span class="mono"><span class="en">Delivery</span><span class="it">Consegna</span></span></li>
+        <li><strong>14</strong><span class="mono"><span class="en">Days to return</span><span class="it">Giorni per il reso</span></span></li>
+        <li><strong>EN · IT</strong><span class="mono"><span class="en">Support</span><span class="it">Assistenza</span></span></li>
+      </ul>
+    </div>
+    <div class="globe-wrap" data-cursor="drag">
+      <canvas class="globe" data-globe aria-hidden="true"></canvas>
+      <div class="globe-glow" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="foot" data-amb="warm">
+  <div class="wrap">
+    <div class="news" id="join">
+      <div>
+        <p class="mono eye"><span class="en">Next drop</span><span class="it">Prossimo drop</span></p>
+        <h2 class="disp h-m"><span class="en">Be first in line.</span><span class="it">Sii il primo in fila.</span></h2>
+      </div>
+      <div>
+        <form class="news-form" data-news novalidate>
+          <label class="sr" for="g-email">Email</label>
+          <input id="g-email" type="email" autocomplete="email" required data-i18n-attr="placeholder" data-en="Your email" data-it="La tua email" placeholder="Your email">
+          <button class="btn btn-line" type="submit" data-magnetic><span class="en">Notify me</span><span class="it">Avvisami</span></button>
+        </form>
+        <p class="mute news-note" data-news-note><span class="en">One email when it goes live. Nothing else. By signing up you accept the <a href="privacy.html">privacy policy</a>.</span><span class="it">Una mail quando esce. Nient’altro. Iscrivendoti accetti l’<a href="privacy.html">informativa privacy</a>.</span></p>
+        <p class="news-ok" data-news-ok hidden><span class="en">You’re on the list. See you at the next drop.</span><span class="it">Sei in lista. Ci vediamo al prossimo drop.</span></p>
+      </div>
+    </div>
+    <p class="foot-word" aria-hidden="true">GRIMZ</p>
+    <div class="foot-links">
+      <nav aria-label="Footer">
+        <a href="#shop">Shop</a>
+        <a href="#fit">360°</a>
+        <a href="storia.html"><span class="en">Story</span><span class="it">Storia</span></a>
+        <a href="archivio.html"><span class="en">Archive</span><span class="it">Archivio</span></a>
+        <a href="faq.html"><span class="en">Help &amp; FAQ</span><span class="it">Assistenza e FAQ</span></a>
+        <a href="ordini.html"><span class="en">Track your order</span><span class="it">Traccia l’ordine</span></a>
+        <a href="#">Instagram [@HANDLE]</a>
+        <a href="#">TikTok [@HANDLE]</a>
+        <a href="mailto:[EMAIL]"><span class="en">Contact</span><span class="it">Contatti</span></a>
+      </nav>
+      <nav aria-label="Legal" class="legal-links">
+        <a href="termini.html"><span class="en">Terms of sale</span><span class="it">Condizioni di vendita</span></a>
+        <a href="privacy.html">Privacy</a>
+        <a href="cookie.html">Cookie policy</a>
+        <a href="#" data-open-consent><span class="en">Cookie preferences</span><span class="it">Preferenze cookie</span></a>
+        <a href="recesso.html"><span class="en">Withdraw from contract here</span><span class="it">Recedi dal contratto qui</span></a>
+      </nav>
+    </div>
+    <div class="endsig" data-endsig aria-hidden="true"><span class="endsig-g">G</span><p class="endsig-t">Work hard. Cry less.</p></div>
+    <p class="company mono">© 2026 [RAGIONE SOCIALE] · <span class="en">VAT</span><span class="it">P.IVA</span> [00000000000] · [INDIRIZZO SEDE]</p>
+  </div>
+</footer>
+
+<!-- ================= STICKY BUY BAR ================= -->
+<div class="buybar" data-buybar>
+  <div class="bb-pick" data-bb-pick>
+    <p class="mono bb-pick-t"><span class="en">Choose your size</span><span class="it">Scegli la taglia</span></p>
+    <div class="bb-sizes" data-bb-sizes role="group" aria-label="Size"></div>
+  </div>
+  <div class="bb-row">
+    <img data-bar-img src="assets/media/set-front.webp" alt="" width="1024" height="1536">
+    <div class="bb-txt">
+      <p class="bb-name"><span data-bar-name>Sanzaru Track Set</span><span class="bb-sz" data-bb-sz hidden></span></p>
+      <p class="bb-price" data-current-price>€109.99</p>
+    </div>
+    <button type="button" class="btn btn-pink" data-bb-cta aria-expanded="false"><span data-bb-label><span class="en">Choose size</span><span class="it">Scegli la taglia</span></span></button>
+  </div>
+</div>
+
+<!-- ================= CART DRAWER ================= -->
+<button type="button" class="scrim" data-scrim data-action="close-cart" tabindex="-1" data-i18n-attr="aria-label" data-en="Close bag" data-it="Chiudi la borsa" aria-label="Close bag"></button>
+<aside class="drawer" data-drawer data-i18n-attr="aria-label" data-en="Bag" data-it="Borsa" aria-label="Bag">
+  <div class="dr-head">
+    <h2 class="disp"><span class="en">Bag</span><span class="it">Borsa</span> (<span data-cart-count-text>0</span>)</h2>
+    <button type="button" class="icon-btn" data-action="close-cart" data-close-btn data-i18n-attr="aria-label" data-en="Close bag" data-it="Chiudi la borsa" aria-label="Close bag"><svg class="ic" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  </div>
+  <div class="free" data-free hidden><p data-free-text></p><div class="free-bar"><span data-free-bar></span></div></div>
+  <div class="empty" data-empty>
+    <p class="disp"><span class="en">Your bag is empty.</span><span class="it">La tua borsa è vuota.</span></p>
+    <p class="mute"><span class="en">Drop 01 is live. Limited run.</span><span class="it">Il Drop 01 è online. Tiratura limitata.</span></p>
+    <a class="btn btn-pink" href="#shop" data-action="close-cart"><span class="en">Shop the drop</span><span class="it">Acquista il drop</span></a>
+  </div>
+  <div class="dr-body" data-cart-body hidden>
+    <div data-items></div>
+    <div data-upsell></div>
+  </div>
+  <div class="dr-saved" data-saved hidden>
+    <p class="mono eye"><span class="en">Saved for later</span><span class="it">Salvati per dopo</span></p>
+    <div data-saved-items></div>
+  </div>
+  <div class="dr-foot" data-cart-foot hidden>
+    <div class="dr-sub"><span><span class="en">Subtotal</span><span class="it">Subtotale</span></span><span class="buy-price" data-subtotal>€ [PRICE]</span></div>
+    <p class="mute dr-note"><span class="en">VAT included. Shipping calculated at checkout.</span><span class="it">IVA inclusa. Spedizione calcolata al checkout.</span></p>
+    <p class="eta mono" data-eta></p>
+    <label class="dr-gift"><input type="checkbox" data-gift><span><span class="en">This is a gift — no prices on the packing slip</span><span class="it">È un regalo — nessun prezzo nel documento di spedizione</span></span></label>
+    <textarea class="dr-gift-msg" data-gift-msg maxlength="200" rows="2" hidden data-i18n-attr="placeholder" data-en="Message for the card (optional, max 200 characters)" data-it="Messaggio per il biglietto (facoltativo, max 200 caratteri)" placeholder="Message for the card (optional, max 200 characters)"></textarea>
+    <a class="btn btn-pink btn-block" href="checkout.html"><span class="en">Checkout</span><span class="it">Vai al checkout</span><svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <button type="button" class="btn btn-line btn-block" data-action="close-cart"><span class="en">Keep shopping</span><span class="it">Continua lo shopping</span></button>
+    <a class="dr-help" href="faq.html"><span class="en">Questions? Help &amp; FAQ</span><span class="it">Domande? Assistenza e FAQ</span></a>
+  </div>
+</aside>
+
+<!-- zoom: full-screen viewer (pinch to zoom on phones) -->
+<div class="lb" data-lb hidden role="dialog" aria-modal="true" data-i18n-attr="aria-label" data-en="Zoom" data-it="Zoom" aria-label="Zoom">
+  <button type="button" class="lb-x" data-lb-close data-i18n-attr="aria-label" data-en="Close" data-it="Chiudi" aria-label="Close"><svg class="ic" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div class="lb-stage" data-lb-stage><img data-lb-img alt=""></div>
+  <button type="button" class="lb-nav lb-prev" data-lb-step="-1" data-i18n-attr="aria-label" data-en="Previous" data-it="Precedente" aria-label="Previous"><svg class="ic" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+  <button type="button" class="lb-nav lb-next" data-lb-step="1" data-i18n-attr="aria-label" data-en="Next" data-it="Successiva" aria-label="Next"><svg class="ic" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+  <p class="lb-hint mono"><span class="en">Move to explore · pinch on phone</span><span class="it">Muovi per esplorare · pizzica sul telefono</span></p>
+</div>
+
+</div>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/globe.js" defer></script>
+</body>
+</html>

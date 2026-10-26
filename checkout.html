@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Checkout — GRIMZ</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23E8809C'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial Black,Arial' font-weight='900' font-style='italic' font-size='40' fill='%230B0B0C'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&amp;family=Geist:wght@300..700&amp;family=Geist+Mono:wght@400..600&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&amp;family=Geist:wght@300..700&amp;family=Geist+Mono:wght@400..600&amp;display=swap"></noscript>
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+  (function () {
+    try {
+      var q = new URLSearchParams(location.search).get('lang');
+      var l = q === 'it' || q === 'en' ? q : JSON.parse(localStorage.getItem('grimz:lang') || 'null');
+      if (!l) l = (navigator.language || 'en').toLowerCase().indexOf('it') === 0 ? 'it' : 'en';
+      document.documentElement.setAttribute('data-lang', l);
+      document.documentElement.lang = l;
+      if(sessionStorage.getItem('grimz:veil')){sessionStorage.removeItem('grimz:veil');document.documentElement.classList.add('veil-in');}
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+<div class="page">
+
+<header class="co-head">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="GRIMZ — home">GRIMZ</a>
+    <p class="co-secure"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 10V8a6 6 0 0 1 12 0v2 M5 10h14v10H5z M12 14v2"/></svg><span class="en">Secure checkout</span><span class="it">Checkout sicuro</span></p>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang-btn="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang-btn="it" aria-pressed="false">IT</button>
+    </div>
+  </div>
+</header>
+<!-- TODO: remove this bar once Stripe / Shopify checkout is connected -->
+<p class="demo-bar"><span class="en">Demo mode — no payment is processed and no data is sent.</span><span class="it">Modalità demo — nessun pagamento viene elaborato e nessun dato viene inviato.</span></p>
+
+<div class="co">
+  <main class="co-main">
+    <nav class="crumbs" aria-label="Checkout steps">
+      <a href="index.html#shop"><span class="en">Bag</span><span class="it">Borsa</span></a>
+      <span aria-hidden="true">›</span><span data-crumb="contact" class="on"><span class="en">Information</span><span class="it">Informazioni</span></span>
+      <span aria-hidden="true">›</span><span data-crumb="ship"><span class="en">Shipping</span><span class="it">Spedizione</span></span>
+      <span aria-hidden="true">›</span><span data-crumb="pay"><span class="en">Payment</span><span class="it">Pagamento</span></span>
+    </nav>
+
+    <!-- ============ FLOW ============ -->
+    <div data-flow>
+      <h1 class="disp co-title">Checkout</h1>
+      <p class="mono eye"><span class="en">Express checkout</span><span class="it">Pagamento rapido</span></p>
+      <div class="co-express" style="margin-top:10px">
+        <button type="button" class="xp" data-express>Apple Pay</button>
+        <button type="button" class="xp" data-express>Google Pay</button>
+        <button type="button" class="xp" data-express>PayPal</button>
+      </div>
+      <p class="test-hint" data-xp-note hidden style="margin-top:10px"><span class="en">Demo: express payments go live when Stripe / PayPal are connected.</span><span class="it">Demo: i pagamenti rapidi si attivano quando colleghi Stripe / PayPal.</span></p>
+      <div class="or"><span class="en">or pay below</span><span class="it">oppure paga qui sotto</span></div>
+
+      <form data-checkout novalidate>
+        <!-- 01 CONTACT -->
+        <section class="step" data-step="contact" data-state="active">
+          <div class="step-h">
+            <h2 class="disp"><span class="step-n">01</span><span class="en">Contact</span><span class="it">Contatto</span></h2>
+            <button type="button" class="step-edit" data-edit="contact"><span class="en">Edit</span><span class="it">Modifica</span></button>
+          </div>
+          <p class="step-sum" data-sum="contact"></p>
+          <div class="step-body">
+            <label class="fld"><span>Email</span><input type="email" name="email" autocomplete="email" required></label>
+            <label class="chk"><input type="checkbox" name="news"><span><span class="en">Email me about the next drop (optional)</span><span class="it">Avvisami del prossimo drop via email (facoltativo)</span></span></label>
+            <button type="button" class="btn btn-line" data-next="contact"><span class="en">Continue to shipping</span><span class="it">Continua alla spedizione</span></button>
+          </div>
+        </section>
+
+        <!-- 02 ADDRESS -->
+        <section class="step" data-step="address" data-state="locked">
+          <div class="step-h">
+            <h2 class="disp"><span class="step-n">02</span><span class="en">Shipping address</span><span class="it">Indirizzo di spedizione</span></h2>
+            <button type="button" class="step-edit" data-edit="address"><span class="en">Edit</span><span class="it">Modifica</span></button>
+          </div>
+          <p class="step-sum" data-sum="address"></p>
+          <div class="step-body">
+            <label class="fld"><span><span class="en">Country / region</span><span class="it">Paese / regione</span></span><select name="country" autocomplete="country" required data-countries></select></label>
+            <div class="f-row">
+              <label class="fld"><span><span class="en">First name</span><span class="it">Nome</span></span><input name="first" autocomplete="given-name" required></label>
+              <label class="fld"><span><span class="en">Last name</span><span class="it">Cognome</span></span><input name="last" autocomplete="family-name" required></label>
+            </div>
+            <label class="fld"><span><span class="en">Address</span><span class="it">Indirizzo</span></span><input name="address" autocomplete="address-line1" required></label>
+            <label class="fld"><span><span class="en">Apartment, suite, etc. (optional)</span><span class="it">Interno, scala, ecc. (facoltativo)</span></span><input name="apt" autocomplete="address-line2"></label>
+            <div class="f-row three">
+              <label class="fld"><span><span class="en">Postal code</span><span class="it">CAP</span></span><input name="zip" autocomplete="postal-code" required></label>
+              <label class="fld"><span><span class="en">City</span><span class="it">Città</span></span><input name="city" autocomplete="address-level2" required></label>
+              <label class="fld"><span><span class="en">Province / state</span><span class="it">Provincia / stato</span></span><input name="prov" autocomplete="address-level1"></label>
+            </div>
+            <label class="fld"><span><span class="en">Phone (for the courier, optional)</span><span class="it">Telefono (per il corriere, facoltativo)</span></span><input type="tel" name="phone" autocomplete="tel"></label>
+            <button type="button" class="btn btn-line" data-next="address"><span class="en">Continue to shipping method</span><span class="it">Continua al metodo di spedizione</span></button>
+          </div>
+        </section>
+
+        <!-- 03 SHIPPING METHOD -->
+        <section class="step" data-step="ship" data-state="locked">
+          <div class="step-h">
+            <h2 class="disp"><span class="step-n">03</span><span class="en">Shipping method</span><span class="it">Metodo di spedizione</span></h2>
+            <button type="button" class="step-edit" data-edit="ship"><span class="en">Edit</span><span class="it">Modifica</span></button>
+          </div>
+          <p class="step-sum" data-sum="ship"></p>
+          <div class="step-body">
+            <div data-ship-opts style="display:flex;flex-direction:column;gap:10px"></div>
+            <button type="button" class="btn btn-line" data-next="ship"><span class="en">Continue to payment</span><span class="it">Continua al pagamento</span></button>
+          </div>
+        </section>
+
+        <!-- 04 PAYMENT -->
+        <section class="step" data-step="pay" data-state="locked">
+          <div class="step-h">
+            <h2 class="disp"><span class="step-n">04</span><span class="en">Payment</span><span class="it">Pagamento</span></h2>
+          </div>
+          <div class="step-body">
+            <p class="mute" style="font-size:14px"><span class="en">All transactions are secure and encrypted.</span><span class="it">Tutte le transazioni sono sicure e criptate.</span></p>
+            <div class="pay-tabs" role="tablist">
+              <button type="button" class="pay-tab on" role="tab" aria-selected="true" data-pay-tab="card"><span class="en">Card</span><span class="it">Carta</span></button>
+              <button type="button" class="pay-tab" role="tab" aria-selected="false" data-pay-tab="paypal">PayPal</button>
+            </div>
+            <!-- TODO: in production replace these fields with Stripe Payment Element (card data never touches your server) -->
+            <div class="card-box" data-pay-panel="card">
+              <label class="fld"><span><span class="en">Card number</span><span class="it">Numero carta</span></span><input name="cc" inputmode="numeric" autocomplete="off" placeholder="1234 1234 1234 1234" maxlength="23"></label>
+              <div class="f-row">
+                <label class="fld"><span><span class="en">Expiry (MM / YY)</span><span class="it">Scadenza (MM / AA)</span></span><input name="exp" inputmode="numeric" autocomplete="off" placeholder="MM / YY" maxlength="7"></label>
+                <label class="fld"><span><span class="en">Security code</span><span class="it">Codice di sicurezza</span></span><input name="cvc" inputmode="numeric" autocomplete="off" placeholder="CVC" maxlength="4"></label>
+              </div>
+              <label class="fld"><span><span class="en">Name on card</span><span class="it">Nome sulla carta</span></span><input name="ccname" autocomplete="off"></label>
+              <p class="test-hint"><span class="en">Demo: use test card 4242 4242 4242 4242, any future date, any CVC.</span><span class="it">Demo: usa la carta di prova 4242 4242 4242 4242, una data futura e un CVC qualsiasi.</span></p>
+            </div>
+            <div class="card-box" data-pay-panel="paypal" hidden>
+              <p class="mute"><span class="en">After “Pay now” you will be redirected to PayPal to complete the purchase securely.</span><span class="it">Dopo “Paga ora” verrai indirizzato a PayPal per completare l’acquisto in modo sicuro.</span></p>
+            </div>
+            <label class="chk"><input type="checkbox" name="billsame" checked><span><span class="en">Billing address same as shipping</span><span class="it">Indirizzo di fatturazione uguale a quello di spedizione</span></span></label>
+            <label class="chk" data-terms-row><input type="checkbox" name="terms"><span><span class="en">I have read and accept the <a href="termini.html" target="_blank" rel="noopener">terms of sale</a> and the <a href="privacy.html" target="_blank" rel="noopener">privacy policy</a>.</span><span class="it">Ho letto e accetto le <a href="termini.html" target="_blank" rel="noopener">condizioni di vendita</a> e l’<a href="privacy.html" target="_blank" rel="noopener">informativa privacy</a>.</span></span></label>
+            <button type="submit" class="btn btn-pink btn-block btn-xl"><span class="en">Pay now</span><span class="it">Paga ora</span> · <span data-pay-total>€ [PRICE]</span></button>
+            <p class="co-legal"><span class="en">You can withdraw within 14 days of delivery without giving a reason — <a href="recesso.html">withdraw from contract here</a>.</span><span class="it">Puoi recedere entro 14 giorni dalla consegna senza dover dare spiegazioni — <a href="recesso.html">recedi dal contratto qui</a>.</span></p>
+          </div>
+        </section>
+      </form>
+    </div>
+
+    <!-- ============ CONFIRMATION ============ -->
+    <div data-done hidden></div>
+
+    <!-- ============ EMPTY CART ============ -->
+    <div class="co-empty" data-empty hidden>
+      <h1 class="disp co-title"><span class="en">Your bag is empty.</span><span class="it">La tua borsa è vuota.</span></h1>
+      <p class="lead"><span class="en">Drop 01 is live. Limited run.</span><span class="it">Il Drop 01 è online. Tiratura limitata.</span></p>
+      <a class="btn btn-pink" href="index.html#shop"><span class="en">Shop the drop</span><span class="it">Acquista il drop</span></a>
+    </div>
+  </main>
+
+  <!-- ============ ORDER SUMMARY ============ -->
+  <aside class="co-aside" data-collapsed="1" aria-label="Order summary">
+    <div class="co-aside-in">
+      <button type="button" class="sum-toggle" data-sum-toggle aria-expanded="false">
+        <span><span class="en">Show order summary</span><span class="it">Mostra riepilogo ordine</span></span>
+        <strong class="buy-price" data-s-total-mini>€ [PRICE]</strong>
+      </button>
+      <div class="co-aside-body">
+        <div class="sum-items" data-sum-items></div>
+        <p class="co-gift mono" data-gift-sum hidden></p>
+        <p class="eta mono co-eta" data-eta></p>
+        <form class="disc" data-disc novalidate>
+          <label class="sr" for="g-disc">Discount code</label>
+          <input id="g-disc" data-i18n-attr="placeholder" data-en="Discount code" data-it="Codice sconto" placeholder="Discount code">
+          <button type="submit" class="btn btn-line"><span class="en">Apply</span><span class="it">Applica</span></button>
+        </form>
+        <p class="disc-msg" data-disc-msg hidden></p>
+        <div class="sum-line"><span><span class="en">Subtotal</span><span class="it">Subtotale</span></span><span data-s-sub>€ [PRICE]</span></div>
+        <div class="sum-line" data-s-disc-row hidden><span><span class="en">Discount</span><span class="it">Sconto</span></span><span data-s-disc></span></div>
+        <div class="sum-line"><span><span class="en">Shipping</span><span class="it">Spedizione</span></span><span data-s-ship></span></div>
+        <div class="sum-total"><span><span class="en">Total</span><span class="it">Totale</span></span><span><small>EUR</small><span class="buy-price" data-s-total>€ [PRICE]</span></span></div>
+        <p class="mono mute" style="font-size:11px"><span class="en">VAT included</span><span class="it">IVA inclusa</span></p>
+        <ul class="sum-trust">
+          <li><svg class="ic" viewBox="0 0 24 24"><path d="M6 10V8a6 6 0 0 1 12 0v2 M5 10h14v10H5z M12 14v2"/></svg><span class="en">Secure, encrypted payment</span><span class="it">Pagamento sicuro e criptato</span></li>
+          <li><svg class="ic" viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.3-5.6 M4 4v4h4"/></svg><span class="en">14 days to return</span><span class="it">14 giorni per il reso</span></li>
+          <li><svg class="ic" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0Z M3.5 9h17 M3.5 15h17 M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9 M12 3C9.5 5.7 8.2 8.7 8.2 12s1.3 6.3 3.8 9"/></svg><span class="en">Shipped worldwide</span><span class="it">Spedizione in tutto il mondo</span></li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<footer class="legal-foot">
+  <div class="wrap">
+    <nav aria-label="Legal">
+      <a href="termini.html"><span class="en">Terms of sale</span><span class="it">Condizioni di vendita</span></a>
+      <a href="privacy.html">Privacy</a>
+      <a href="cookie.html">Cookie policy</a>
+      <a href="recesso.html"><span class="en">Withdraw from contract here</span><span class="it">Recedi dal contratto qui</span></a>
+    </nav>
+    <p>© 2026 [RAGIONE SOCIALE] · <span class="en">VAT</span><span class="it">P.IVA</span> [00000000000]</p>
+  </div>
+</footer>
+
+</div>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/checkout.js" defer></script>
+</body>
+</html>

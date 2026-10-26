@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Withdraw from contract — GRIMZ</title>
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23E8809C'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial Black,Arial' font-weight='900' font-style='italic' font-size='40' fill='%230B0B0C'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&amp;family=Geist:wght@300..700&amp;family=Geist+Mono:wght@400..600&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&amp;family=Geist:wght@300..700&amp;family=Geist+Mono:wght@400..600&amp;display=swap"></noscript>
+<link rel="stylesheet" href="assets/css/style.css">
+<script>(function(){try{var q=new URLSearchParams(location.search).get('lang');var l=q==='it'||q==='en'?q:JSON.parse(localStorage.getItem('grimz:lang')||'null');if(!l)l=(navigator.language||'en').toLowerCase().indexOf('it')===0?'it':'en';document.documentElement.setAttribute('data-lang',l);document.documentElement.lang=l;if(sessionStorage.getItem('grimz:veil')){sessionStorage.removeItem('grimz:veil');document.documentElement.classList.add('veil-in');}}catch(e){}})();</script>
+</head>
+<body>
+<div class="page">
+<header class="legal-nav">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="GRIMZ — home">GRIMZ</a>
+    <a class="back" href="index.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg><span class="en">Back to the shop</span><span class="it">Torna allo shop</span></a>
+    <div class="lang" role="group" aria-label="Language"><button type="button" data-lang-btn="en" aria-pressed="true">EN</button><button type="button" data-lang-btn="it" aria-pressed="false">IT</button></div>
+  </div>
+</header>
+
+<!-- Online withdrawal function — art. 54-bis Codice del Consumo (introduced by D.Lgs. 209/2025, Directive (EU) 2023/2673).
+     TODO: connect the form to your backend: store the request and email the confirmation (content + date and time). -->
+<main class="legal">
+  <p class="mono eye"><span class="en">Right of withdrawal</span><span class="it">Diritto di recesso</span></p>
+  <h1 class="disp"><span class="en">Withdraw from contract here</span><span class="it">Recedi dal contratto qui</span></h1>
+  <p class="lead" style="max-width:56ch"><span class="en">You have 14 days from delivery to withdraw from your purchase without giving a reason. Fill in the form: you will receive a confirmation with the date and time of your request.</span><span class="it">Hai 14 giorni dalla consegna per recedere dall’acquisto senza dover dare spiegazioni. Compila il modulo: riceverai una conferma con data e ora della tua richiesta.</span></p>
+
+  <form class="wd-card" data-withdraw novalidate>
+    <h2 class="disp"><span class="en">Withdrawal statement</span><span class="it">Dichiarazione di recesso</span></h2>
+    <label class="fld"><span><span class="en">First and last name</span><span class="it">Nome e cognome</span></span><input name="name" autocomplete="name" required></label>
+    <label class="fld"><span><span class="en">Order number</span><span class="it">Numero d’ordine</span></span><input name="order" placeholder="GZ-000000" required></label>
+    <label class="fld"><span><span class="en">Products you are withdrawing from (leave empty for the whole order)</span><span class="it">Prodotti da cui recedi (lascia vuoto per l’intero ordine)</span></span><input name="items"></label>
+    <label class="fld"><span><span class="en">Email where you want to receive the confirmation</span><span class="it">Email su cui ricevere la conferma</span></span><input type="email" name="email" autocomplete="email" required></label>
+    <button type="submit" class="btn btn-line btn-xl"><span class="en">Confirm withdrawal</span><span class="it">Conferma recesso</span></button>
+  </form>
+
+  <div class="wd-card" data-withdraw-done hidden>
+    <h2 class="disp"><span class="en">Request received</span><span class="it">Richiesta ricevuta</span></h2>
+    <p><span class="en">We received your withdrawal statement for order</span><span class="it">Abbiamo ricevuto la tua dichiarazione di recesso per l’ordine</span> <strong data-withdraw-order></strong> <span class="en">on</span><span class="it">il</span> <strong data-withdraw-stamp></strong>.</p>
+    <p><span class="en">A confirmation with the content of your statement has been sent to</span><span class="it">Una conferma con il contenuto della dichiarazione è stata inviata a</span> <strong data-withdraw-email></strong>.</p>
+    <p><span class="en">Next step: send the products back within 14 days to [RETURNS ADDRESS]. We refund you within 14 days of your withdrawal, with the same payment method.</span><span class="it">Prossimo passo: rispedisci i prodotti entro 14 giorni a [INDIRIZZO RESI]. Ti rimborsiamo entro 14 giorni dal recesso, con lo stesso metodo di pagamento.</span></p>
+  </div>
+
+  <p class="note"><span class="en">You can also withdraw by sending a clear statement to [EMAIL]. Full details in the <a href="termini.html">terms of sale</a>.</span><span class="it">Puoi recedere anche inviando una dichiarazione esplicita a [EMAIL]. Tutti i dettagli nelle <a href="termini.html">condizioni di vendita</a>.</span></p>
+</main>
+
+<footer class="legal-foot">
+  <div class="wrap">
+    <nav aria-label="Legal">
+      <a href="termini.html"><span class="en">Terms of sale</span><span class="it">Condizioni di vendita</span></a>
+      <a href="privacy.html">Privacy</a>
+      <a href="cookie.html">Cookie policy</a>
+      <a href="#" data-open-consent><span class="en">Cookie preferences</span><span class="it">Preferenze cookie</span></a>
+      <a href="recesso.html"><span class="en">Withdraw from contract here</span><span class="it">Recedi dal contratto qui</span></a>
+    </nav>
+    <p>© 2026 [RAGIONE SOCIALE] · <span class="en">VAT</span><span class="it">P.IVA</span> [00000000000]</p>
+  </div>
+</footer>
+</div>
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

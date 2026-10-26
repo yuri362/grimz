@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Verify a piece — GRIMZ</title>
+<meta name="description" content="Check that your GRIMZ piece is authentic with its number and code.">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Verify a piece — GRIMZ">
+<meta property="og:image" content="assets/media/og-grimz.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23E8809C'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial Black,Arial' font-weight='900' font-style='italic' font-size='40' fill='%230B0B0C'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&amp;family=Geist:wght@300..700&amp;family=Instrument+Serif:ital@0;1&amp;family=Geist+Mono:wght@400..600&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&amp;family=Geist:wght@300..700&amp;family=Instrument+Serif:ital@0;1&amp;family=Geist+Mono:wght@400..600&amp;display=swap"></noscript>
+<link rel="stylesheet" href="assets/css/style.css">
+<script>(function(){try{var q=new URLSearchParams(location.search).get('lang');var l=q==='it'||q==='en'?q:JSON.parse(localStorage.getItem('grimz:lang')||'null');if(!l)l=(navigator.language||'en').toLowerCase().indexOf('it')===0?'it':'en';document.documentElement.setAttribute('data-lang',l);document.documentElement.lang=l;if(sessionStorage.getItem('grimz:veil')){sessionStorage.removeItem('grimz:veil');document.documentElement.classList.add('veil-in');}}catch(e){}})();</script>
+</head>
+<body>
+<div class="page sub">
+<header class="legal-nav">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="GRIMZ — home">GRIMZ</a>
+    <nav class="story-nav" aria-label="Main"><a href="index.html#shop"><span class="en">Shop</span><span class="it">Shop</span></a><a href="storia.html"><span class="en">Story</span><span class="it">Storia</span></a><a href="archivio.html"><span class="en">Archive</span><span class="it">Archivio</span></a></nav>
+    <div class="lang" role="group" aria-label="Language"><button type="button" data-lang-btn="en" aria-pressed="true">EN</button><button type="button" data-lang-btn="it" aria-pressed="false">IT</button></div>
+  </div>
+</header>
+<main class="legal vf">
+  <p class="mono eye"><span class="en">Authenticity</span><span class="it">Autenticità</span></p>
+  <h1 class="disp"><span class="en">Verify your piece</span><span class="it">Verifica il tuo pezzo</span></h1>
+  <p class="lead" style="max-width:56ch"><span class="en">Every GRIMZ piece has its own number, printed on the card in the box, and a code on the garment. Scan the code or enter both here.</span><span class="it">Ogni capo GRIMZ ha un numero, stampato sulla card nella confezione, e un codice sul capo. Inquadra il codice o inseriscili qui.</span></p>
+  <form class="wd-card" data-verify novalidate>
+    <label class="fld"><span><span class="en">Piece number</span><span class="it">Numero del pezzo</span></span><input name="n" inputmode="numeric" placeholder="041" required></label>
+    <label class="fld"><span><span class="en">Code on the garment</span><span class="it">Codice sul capo</span></span><input name="c" placeholder="GZ-XXXX" required></label>
+    <button type="submit" class="btn btn-line btn-xl"><span class="en">Verify</span><span class="it">Verifica</span></button>
+  </form>
+  <div class="vf-out" data-verify-out hidden></div>
+  <p class="note"><span class="en">Demo: the check runs here in the page. Once the store is connected it will read the real register of numbered pieces.</span><span class="it">Demo: il controllo avviene qui nella pagina. Quando lo shop sarà collegato leggerà il vero registro dei pezzi numerati.</span></p>
+</main>
+<footer class="legal-foot">
+  <div class="wrap">
+    <nav aria-label="Legal">
+      <a href="faq.html"><span class="en">Help &amp; FAQ</span><span class="it">Assistenza e FAQ</span></a>
+      <a href="ordini.html"><span class="en">Track your order</span><span class="it">Traccia l’ordine</span></a>
+      <a href="verifica.html"><span class="en">Verify a piece</span><span class="it">Verifica un pezzo</span></a>
+      <a href="termini.html"><span class="en">Terms of sale</span><span class="it">Condizioni di vendita</span></a>
+      <a href="privacy.html">Privacy</a>
+      <a href="cookie.html">Cookie policy</a>
+      <a href="#" data-open-consent><span class="en">Cookie preferences</span><span class="it">Preferenze cookie</span></a>
+      <a href="recesso.html"><span class="en">Withdraw from contract here</span><span class="it">Recedi dal contratto qui</span></a>
+    </nav>
+    <p>© 2026 [RAGIONE SOCIALE] · <span class="en">VAT</span><span class="it">P.IVA</span> [00000000000]</p>
+  </div>
+</footer>
+</div>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/pages.js" defer></script>
+</body>
+</html>

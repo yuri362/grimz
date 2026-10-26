@@ -1,0 +1,8 @@
+/* Self-hosted fonts — activate after placing the .woff2 files in assets/fonts/ (see assets/fonts/LEGGIMI.txt).
+   Same family names as Google Fonts, so no other CSS changes are needed. */
+@font-face { font-family: 'Archivo'; src: url('../fonts/archivo-variable.woff2') format('woff2'); font-weight: 400 900; font-stretch: 62% 125%; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Archivo'; src: url('../fonts/archivo-variable-italic.woff2') format('woff2'); font-weight: 400 900; font-stretch: 62% 125%; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Geist'; src: url('../fonts/geist-variable.woff2') format('woff2'); font-weight: 300 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Geist Mono'; src: url('../fonts/geist-mono-variable.woff2') format('woff2'); font-weight: 400 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Instrument Serif'; src: url('../fonts/instrument-serif-regular.woff2') format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Instrument Serif'; src: url('../fonts/instrument-serif-italic.woff2') format('woff2'); font-weight: 400; font-style: italic; font-display: swap; }

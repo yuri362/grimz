@@ -1,0 +1,5 @@
+# GRIMZ — replace [DOMINIO] with the real domain before going live
+User-agent: *
+Allow: /
+Disallow: /checkout.html
+Sitemap: https://[DOMINIO]/sitemap.xml
